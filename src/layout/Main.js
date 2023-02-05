@@ -1,4 +1,4 @@
-import React from "react";
+
 import Last from "../components/Last";
 import MainHello from "../components/MainHello";
 import Skill from "../components/Skill";

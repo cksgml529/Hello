@@ -4,14 +4,19 @@ import Main from "./layout/Main";
 import Contact from "./layout/Contact";
 
 import "./assets/style/style.scss";
+import Pj1 from "./project/Pj1";
 
 function App() {
   return (
-    <div className="App" data-barba="container">
+    <div className="App">
       <Header />
-
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/">
+          <Route index element={<Main />}/>
+          <Route path=":pj1"  element={<Pj1 />}/>
+
+        </Route>
+        
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>

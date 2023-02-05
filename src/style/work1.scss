@@ -44,17 +44,26 @@
         color: #5b63ec;
         font-weight: 700;
         font-size: 20px;
-        .iconBox {
-          width: 1.563vw;
-          height: 1.563vw;
-          position: relative;
-          span {
-            padding-right: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .linkIn{
+          display: flex;
+          align-items: center;
+          transition: .4s;
+          .iconBox {
+            width: 1.563vw;
+            height: 1.563vw;
+            position: relative;
+           
+            span {
+              padding-right: 10px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
           }
+        }
+        &:hover .linkIn{
+          transform: translateX(10px);
         }
       }
     }
@@ -103,9 +112,10 @@
         opacity: 0;
       }  
       .mouse{
+        width: 30px;
+        height: 30px;
     position: absolute;
-    transition: .4s;
-    animation: point 1s linear;
+    z-index: 999;
     background-color: #5b63ec;
     border-radius: 50%;
     top: -15px;

@@ -104,12 +104,14 @@ const mouseHandler = (e)=>{
           <h3>{title}</h3>
           <p>{tag}</p>
           <Link to={link}>
+            <div className="linkIn">
             <div className="iconBox">
               <span>
                 <BsArrowRight />
               </span>
+            </div> 
+            <span>view more</span>
             </div>
-            view more
           </Link>
         </div>
       </div>
@@ -120,7 +122,6 @@ const mouseHandler = (e)=>{
            onMouseMove={mouseHandler}
             key={item.id} 
             ref={(item) => (topRef.current[count++] = item)
-              
             }
           >
             <Link to={item.link}>
@@ -128,7 +129,7 @@ const mouseHandler = (e)=>{
             </Link>
             <img src={item.logo} alt={item.logoalt} className="logoBox" />
 
-            <Link to={item.link} className="mouse" style={{transform:`translate(${xy.x}px,${xy.y}px)`}}>View</Link>
+            {/* <Link to={item.link} className="mouse" style={{transform:`translate(${xy.x}px,${xy.y}px)`}}>View</Link> */}
           </div>
         ))}
       </div>
