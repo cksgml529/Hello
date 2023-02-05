@@ -20,8 +20,8 @@ function App() {
           <Route index element={<Main />}/>
           <Route path=":pj1"  element={<ProjectList />}/>
           <Route path=":pj2"  element={<ProjectList />}/>
-         {/*  <Route path=":pj3"  element={<Pj3/>}/>
-          <Route path=":pj4"  element={<Pj4/>}/>
+          <Route path=":pj3"  element={<Pj3/>}/>
+           {/*<Route path=":pj4"  element={<Pj4/>}/>
           <Route path=":pj5"  element={<Pj5/>}/> */}
 
         </Route>
