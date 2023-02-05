@@ -22,16 +22,27 @@
      .pjdes{
         width: 45vw;
         text-transform: capitalize;
+
         h3{
             text-transform: uppercase;
             font-size: 28px;
             padding-bottom: 20px;
         }
+        .pjtitle{
+            display: flex;
+            align-items: flex-start;
         h2{
             font-size: 45px;
             font-weight: 600;
             padding-bottom: 40px;
         }
+        img{
+            width: 55px;
+            object-fit: contain;
+            padding-left: 10px;
+        }
+       
+    }
         p{
             font-size: 20px;
         }
@@ -63,7 +74,7 @@
         display: flex;
         overflow: hidden;
         &:hover .pj{
-            transform: translateY(-370px);
+            transform: translateY(-260px);
         }
         .frame{
         width: 700px;
@@ -102,7 +113,7 @@
         p{
             text-transform: capitalize;
             color: #aaa;
-            font-weight: 600;
+            font-weight: 600; 
             margin-top: 28px;
             transition: .4s;
 

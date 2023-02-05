@@ -1,4 +1,3 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import {FaHome} from 'react-icons/fa';
 import { BsArrowRight,BsCheck2All } from "react-icons/bs";
 import { Link } from 'react-router-dom';
@@ -11,22 +10,11 @@ import react from '../assets/images/icon/react.png';
 import css from '../assets/images/icon/css.png';
 
 import "swiper/css";
-import '../style/pj.scss';
-import Pj2 from "./Pj2";
-import Pj3 from "./Pj3";
-import Pj4 from "./Pj4";
-import Pj5 from "./Pj5";
-function Pj1() {
 
+function Pj5() {
     return (
         <div>
-            {/* <Swiper className="mySwiper"
-                slidesPerView={1}
-                spaceBetween={30}
-                loop={true}
-                >
-        <SwiperSlide> */}
-            <div className="pjwrapper">
+              <div className="pjwrapper">
             <article className='pj'>
             <div className='pjBox'>
             <div className='pjdes'>
@@ -34,11 +22,11 @@ function Pj1() {
             <h3>project</h3>
             
             <div className="pjtitle">
-            <h2>프로젝트명1</h2> 
+            <h2>프로젝트명5</h2> 
             <img src={react} alt="react"/>
             <img src={css} alt="css"/>
             </div>
-            <p>프로젝트 설명1</p>
+            <p>프로젝트 설명5</p>
            
 
             <div className='link'>
@@ -48,7 +36,7 @@ function Pj1() {
             </div>
             <div className='showpj'>
                 <img src={pj1t} alert="타블렛 프레임" className='frame'/>
-                <img src ={pj1} alert="프로젝트1" className='pj'/>
+                {/* <img src ={pj1} alert="프로젝트1" className='pj'/> */}
             </div>
             </div>
             
@@ -61,23 +49,9 @@ function Pj1() {
             </div>
 
             </article>
-            {/* <article className="problem">
-                <h3>Problem & Solution</h3>
-                <h4><BsCheck2All/>Drop Menu 항목이 효과를 준 li항목 밑을 hover해도 출력됨</h4>
-
-            </article> */}
             </div>
-            {/* </SwiperSlide>
-            <SwiperSlide><Pj2/></SwiperSlide>
-        <SwiperSlide><Pj3/></SwiperSlide>
-        <SwiperSlide><Pj4/></SwiperSlide>
-        <SwiperSlide><Pj5/></SwiperSlide>
-
-      </Swiper> */}
-           
-
         </div>
     );
 }
 
-export default Pj1;
+export default Pj5;
