@@ -125,8 +125,6 @@ function Work1() {
               <img src={item.img} alt={item.imgalt} className="bgimgBox" />
             </Link>
             <img src={item.logo} alt={item.logoalt} className="logoBox" />
-
-            {/* <Link to={item.link} className="mouse" style={{transform:`translate(${xy.x}px,${xy.y}px)`}}>View</Link> */}
           </div>
         ))}
       </div>

@@ -19,7 +19,7 @@ function SkillList() {
     { id: 2, skill: "props를 통한 하위 Component의 연동" },
     { id: 3, skill: "Hook을 활용한 역동적인 웹페이지 구현" },
     { id: 4, skill: "Router-dom의 이해와 구현에 적용" },
-    { id: 5, skill: "Redux toolkit을 활용한 전체 Data 관리" },
+    { id: 5, skill: "Redux Toolkit을 활용한 전체 Data 관리" },
   ];
   const git = [
     { id: 1, skill: "팀 프로젝트 내 팀원과 협업 및 작업물 공유" },

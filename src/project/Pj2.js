@@ -2,15 +2,11 @@ import { FaHome } from "react-icons/fa";
 import { BsArrowRight, BsCheck2All } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-import pj1t from "../assets/images/image/tablet_frame.png";
+import pjt from "../assets/images/image/tablet_frame.png";
 import pj1 from "../assets/images/image/pj1.png";
-import arrow from "../assets/images/icon/swipe-arrow.png";
-import hand from "../assets/images/icon/swipe-hand.png";
 import react from "../assets/images/icon/react.png";
 import css from "../assets/images/icon/css.png";
 
-import "swiper/css";
-import Pj1 from "./Pj1";
 import { useEffect, useState } from "react";
 function Pj2() {
   const [slide, setSlide] = useState(0);
@@ -46,17 +42,9 @@ function Pj2() {
               </div>
             </div>
             <div className="showpj">
-              <img src={pj1t} alert="타블렛 프레임" className="frame" />
+              <img src={pjt} alert="타블렛 프레임" className="frame" />
               {/* <img src ={pj1} alert="프로젝트1" className='pj'/> */}
             </div>
-          </div>
-
-          <div className="slideicon">
-            <div className="imgbox">
-              <img src={arrow} alt="arrow" className="arrow" />
-              <img src={hand} alt="hand" className="hand" />
-            </div>
-            <p>next project</p>
           </div>
         </article>
       </div>

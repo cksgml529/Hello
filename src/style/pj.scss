@@ -1,40 +1,26 @@
-@keyframes swipe {
-  0% {
-    transform: translateX(-5%);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(-5%);
-  }
-}
 .pj {
-  padding-top: 200px;
-  height: calc(100vh - 200px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  // border: 1px solid #000;
-  .pjBox {
+  article {
+    padding: 10.417vw 10vw 11vw 10vw;
+  }
+  .first {
     display: flex;
-    .pjdes {
-      width: 45vw;
-      text-transform: capitalize;
-
-      h3 {
-        text-transform: uppercase;
-        font-size: 28px;
-        padding-bottom: 20px;
-      }
-      .pjtitle {
+    justify-content: space-between;
+    h3 {
+      font-size: 28px;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+    }
+    .desBox {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      .title {
         display: flex;
         align-items: flex-start;
         h2 {
           font-size: 45px;
           font-weight: 600;
-          padding-bottom: 40px;
+          padding-bottom: 60px;
         }
         img {
           width: 55px;
@@ -42,78 +28,131 @@
           padding-left: 10px;
         }
       }
-      p {
+      .txt {
         font-size: 20px;
+        p {
+          margin-bottom: 10px;
+        }
       }
       .link {
-        padding-top: 100px;
+        padding-top: 200px;
         a {
+          padding: 10px 15px;
+          display: inline-block;
           border: 2px solid #969cf3;
           border-radius: 50px;
           color: #5b63ec;
-          padding: 12px;
+          text-transform: capitalize;
           font-weight: 600;
-
-          &:last-child {
-            margin-left: 20px;
+          &:first-child {
+            margin-right: 20px;
           }
-
-          span {
-            padding: 0 15px;
+          &:hover .linkBox {
+            transform: translateX(5px);
           }
-          &:hover span {
-            transform: translateX(10px);
+          .linkBox {
+            display: flex;
+            align-items: center;
+            transition: 0.4s;
           }
         }
       }
     }
-    .showpj {
+    .pjBox {
+      width: 50vw;
+      margin-left: 100px;
       position: relative;
-      cursor: pointer;
       display: flex;
+      justify-content: flex-start;
+      cursor: pointer;
       overflow: hidden;
-      &:hover .pj {
-        transform: translateY(-260px);
+      &:hover .pj1 {
+        transform: translateY(-980px);
       }
       .frame {
-        width: 700px;
-        z-index: 9;
+        width: 36.458vw;
+        z-index: 999;
       }
-      .pj {
-        width: 100%;
+      .pj1 {
+        width: 95%;
         object-fit: contain;
         position: absolute;
+        top: 0;
+        left: 18px;
         padding: 0;
         padding-top: 20px;
-        transition: 5s;
+        transition: 6s;
       }
     }
   }
-  .slideicon {
-    position: relative;
-    display: flex;
-    .imgbox {
-      width: 60px;
-      height: 100px;
-      .arrow {
-        width: 13%;
-        position: absolute;
-        top: 30px;
-        left: -5%;
-        transition: 0.4s;
-        animation: swipe 1.5s linear infinite;
+  .dir {
+    font-size: 30px;
+    h3 {
+      font-size: 30px;
+      padding-bottom: 6.771vw;
+    }
+    .category {
+      display: flex;
+      justify-content: center;
+      span {
+        vertical-align: middle;
+        padding-bottom: 15px;
       }
-      .hand {
-        width: 100%;
-        margin-top: 30px;
+      .oneDep {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 4.167vw;
+      }
+      .twoDep {
+        display: flex;
+        flex-direction: column;
+        padding-right: 2.604vw;
+      }
+      .threeDep {
+        display: flex;
+        flex-direction: column;
+        padding: 8.333vw 2.604vw 0 0;
+        span {
+          margin-bottom: 5.208vw;
+
+          &:nth-child(2) {
+            padding-top: 2.604vw;
+          }
+          &:nth-child(3) {
+            padding-top: 10.677vw;
+          }
+          &:nth-child(4) {
+            padding-top: 2.604vw;
+          }
+          &:nth-child(5) {
+            padding-top: 5.208vw;
+          }
+        }
+      }
+      .fourDep {
+        padding: 8.333vw 2.604vw 0 0;
+        div {
+          display: flex;
+          flex-direction: column;
+
+          &:nth-child(2) {
+            padding-top: 2.865vw;
+          }
+          &:nth-child(3) {
+            padding-top: 2.865vw;
+          }
+          &:nth-child(4) {
+            padding-top: 2.865vw;
+          }
+        }
       }
     }
-    p {
-      text-transform: capitalize;
-      color: #aaa;
-      font-weight: 600;
-      margin-top: 28px;
-      transition: 0.4s;
-    }
+  }
+  .tool {
+  }
+  .page {
+  }
+  .problem {
   }
 }
