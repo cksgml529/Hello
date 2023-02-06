@@ -1,83 +1,60 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import {FaHome} from 'react-icons/fa';
-import { BsArrowRight,BsCheck2All } from "react-icons/bs";
-import { Link } from 'react-router-dom';
+import { FaHome } from "react-icons/fa";
+import { BsArrowRight, BsCheck2All } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
-import pj1t from '../assets/images/image/tablet_frame.png';
-import pj1 from '../assets/images/image/pj1.png';
-import arrow from '../assets/images/icon/swipe-arrow.png';
-import hand from '../assets/images/icon/swipe-hand.png';
-import react from '../assets/images/icon/react.png';
-import css from '../assets/images/icon/css.png';
+import pj1t from "../assets/images/image/tablet_frame.png";
+import pj1 from "../assets/images/image/pj1.png";
+import arrow from "../assets/images/icon/swipe-arrow.png";
+import hand from "../assets/images/icon/swipe-hand.png";
+import react from "../assets/images/icon/react.png";
+import scss from "../assets/images/icon/scss.png";
 
 import "swiper/css";
-import '../style/pj.scss';
-import Pj2 from "./Pj2";
-import Pj3 from "./Pj3";
-import Pj4 from "./Pj4";
-import Pj5 from "./Pj5";
+import "../style/pj.scss";
+
 function Pj1() {
+  return (
+    <div>
+      <div className="pjwrapper">
+        <article className="pj">
+          <div className="pjBox">
+            <div className="pjdes">
+              <h3>project</h3>
 
-    return (
-        <div>
-            {/* <Swiper className="mySwiper"
-                slidesPerView={1}
-                spaceBetween={30}
-                loop={true}
-                >
-        <SwiperSlide> */}
-            <div className="pjwrapper">
-            <article className='pj'>
-            <div className='pjBox'>
-            <div className='pjdes'>
+              <div className="pjtitle">
+                <h2>프로젝트명1</h2>
+                <img src={react} alt="react" />
+                <img src={scss} alt="css" />
+              </div>
+              <p>프로젝트 설명1</p>
 
-            <h3>project</h3>
-            
-            <div className="pjtitle">
-            <h2>프로젝트명1</h2> 
-            <img src={react} alt="react"/>
-            <img src={css} alt="css"/>
+              <div className="link">
+                <Link to="/">
+                  <span>
+                    <FaHome style={{ paddingRight: 10 }} />
+                    go back home
+                  </span>
+                </Link>
+                <Link to="https://cksgml529.github.io/react_push/">
+                  <span>
+                    <BsArrowRight style={{ paddingRight: 10 }} />
+                    go to webpage
+                  </span>
+                </Link>
+              </div>
             </div>
-            <p>프로젝트 설명1</p>
-           
-
-            <div className='link'>
-            <Link to="/"><span><FaHome style={{paddingRight: 10}}/>go back home</span></Link>
-            <Link to='https://cksgml529.github.io/react_push/'><span><BsArrowRight style={{paddingRight: 10}}/>go to webpage</span></Link>
+            <div className="showpj">
+              <img src={pj1t} alert="타블렛 프레임" className="frame" />
+              <img src={pj1} alert="프로젝트1" className="pj" />
             </div>
-            </div>
-            <div className='showpj'>
-                <img src={pj1t} alert="타블렛 프레임" className='frame'/>
-                <img src ={pj1} alert="프로젝트1" className='pj'/>
-            </div>
-            </div>
-            
-            <div className='slideicon'>
-                <div className='imgbox'>
-                <img src={arrow} alt='arrow' className='arrow'/>  
-                <img src={hand} alt='hand' className='hand'/>
-                </div>
-                <p>next project</p>
-            </div>
-
-            </article>
-            {/* <article className="problem">
-                <h3>Problem & Solution</h3>
-                <h4><BsCheck2All/>Drop Menu 항목이 효과를 준 li항목 밑을 hover해도 출력됨</h4>
-
-            </article> */}
-            </div>
-            {/* </SwiperSlide>
-            <SwiperSlide><Pj2/></SwiperSlide>
-        <SwiperSlide><Pj3/></SwiperSlide>
-        <SwiperSlide><Pj4/></SwiperSlide>
-        <SwiperSlide><Pj5/></SwiperSlide>
-
-      </Swiper> */}
-           
-
-        </div>
-    );
+          </div>
+        </article>
+        <article>
+          <h3>problem & reslove</h3>
+        </article>
+      </div>
+    </div>
+  );
 }
 
 export default Pj1;

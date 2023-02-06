@@ -48,7 +48,7 @@ function Work1() {
       imgalt: "야놀자",
       logo: tpj1logo,
       logoalt: "야놀자로고",
-      link: "./tpj1",
+      link: "./pj4",
       title: "4html web team",
       tag: "#PC #팀프로젝트 #Swiper #Axios",
     },
@@ -58,7 +58,7 @@ function Work1() {
       imgalt: "상상인증권",
       logo: tpj2logo,
       logoalt: "상상인증권로고",
-      link: "./tpj2",
+      link: "./pj5",
       title: "5javascript web team",
       tag: "#PC #팀프로젝트 #Scroll #Axios",
     },
@@ -67,7 +67,7 @@ function Work1() {
   const [title, setTitle] = useState(projectData[num].title);
   const [tag, setTag] = useState(projectData[num].tag);
   const [link, setLink] = useState(projectData[num].link);
-  const [xy,setXY] = useState({x:0,y:0});
+  const [xy, setXY] = useState({ x: 0, y: 0 });
 
   const topRef = useRef([]);
   const desRef = useRef([]);
@@ -85,19 +85,17 @@ function Work1() {
       setLink(projectData[num].link);
     }
   };
-const mouseHandler = (e)=>{
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
-  setXY({x:mouseX,y:mouseY});
-
-}
+  const mouseHandler = (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    setXY({ x: mouseX, y: mouseY });
+  };
 
   useEffect(() => {
-   window.addEventListener("scroll", eventHandler);
-    
+    window.addEventListener("scroll", eventHandler);
   }, [num]);
   return (
-    <div className="work1" >
+    <div className="work1">
       <div className="workdes1">
         <div className="desBox" ref={desRef}>
           <h4>work</h4>
@@ -105,12 +103,12 @@ const mouseHandler = (e)=>{
           <p>{tag}</p>
           <Link to={link}>
             <div className="linkIn">
-            <div className="iconBox">
-              <span>
-                <BsArrowRight />
-              </span>
-            </div> 
-            <span>view more</span>
+              <div className="iconBox">
+                <span>
+                  <BsArrowRight />
+                </span>
+              </div>
+              <span>view more</span>
             </div>
           </Link>
         </div>
@@ -119,10 +117,9 @@ const mouseHandler = (e)=>{
         {projectData.map((item) => (
           <div
             className="workBox1"
-           onMouseMove={mouseHandler}
-            key={item.id} 
-            ref={(item) => (topRef.current[count++] = item)
-            }
+            onMouseMove={mouseHandler}
+            key={item.id}
+            ref={(item) => (topRef.current[count++] = item)}
           >
             <Link to={item.link}>
               <img src={item.img} alt={item.imgalt} className="bgimgBox" />
@@ -133,7 +130,6 @@ const mouseHandler = (e)=>{
           </div>
         ))}
       </div>
-    
     </div>
   );
 }
