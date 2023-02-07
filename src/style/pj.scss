@@ -95,83 +95,72 @@
     }
   }
   .dir {
-    font-size: 25px;
+    font-size: 20px;
+    padding: 7vw 9vw 0 9vw;
     h3 {
-      font-size: 40px;
-      padding-bottom: 6.771vw;
+      font-size: 50px;
+      font-weight: 600;
+      padding-bottom: 5vw;
     }
     .category {
       display: flex;
-      justify-content: space-around;
+      padding: 0 13vw;
       span {
-        vertical-align: middle;
-        padding-bottom: 15px;
+        padding-bottom: 1vw;
       }
       .oneDep {
+        width: 250px;
+        font-size: 30px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         padding-right: 4.167vw;
+      
       }
       .twoDep {
+        width: 100%;
+        font-size: 28px;
         display: flex;
         flex-direction: column;
-        padding-right: 2.604vw;
+        // padding-right: 4.167vw;
       }
-      .threeDep {
+      .src {
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        padding: 8.333vw 2.604vw 0 0;
-        span {
-          margin-bottom: 5.208vw;
-
-          &:nth-child(2) {
-            padding-top: 2.604vw;
-          }
-          &:nth-child(3) {
-            padding-top: 10.677vw;
-          }
-          &:nth-child(4) {
-            padding-top: 2.604vw;
-          }
-          &:nth-child(5) {
-            padding-top: 5.208vw;
-          }
+        align-items: flex-start;
+        .srcBox{
+         width: 250px;
         }
       }
-      .fourDep {
-        padding: 8.333vw 2.604vw 0 0;
-        font-size: 25px;
-
-        div {
+      .threeDep {           
+        display: flex;
+        .threeBox{
+          width: 250px;
+          padding-right: 1vw;
+        }
+        .fourDep {
+          width: 250px;
           display: flex;
           flex-direction: column;
-
-          &:nth-child(2) {
-            padding-top: 3.3vw;
-          }
-          &:nth-child(3) {
-            padding-top: 5vw;
-          }
-          &:nth-child(4) {
-            padding-top: 2.865vw;
-          }
+          margin-bottom: 30px;
+          
         }
       }
     }
-  }
+  }  
   .tandp {
+    padding: 7vw 9vw 0 9vw;
     h3 {
       font-size: 40px;
       margin-bottom: 30px;
     }
     .tool {
-      margin-bottom: 100px;
+      margin-bottom: 80px;
     }
     .page {
     }
   }
   .problem {
+    padding: 7vw 9vw 0 9vw;
     h3 {
       font-size: 40px;
       margin-bottom: 30px;

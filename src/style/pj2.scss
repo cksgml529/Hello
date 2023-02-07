@@ -2,8 +2,7 @@
   .swiper-wrapper {
     .swiper-slide {
       margin-top: 150px;
-      article {
-      }
+
       .head {
         padding: 3vw 9vw 11vw 9vw;
         display: flex;
@@ -92,44 +91,64 @@
       }
       .dir {
         font-size: 20px;
-        padding-top: 8vw;
+        padding: 7vw 9vw 0 9vw;
         h3 {
-          font-size: 30px;
+          font-size: 50px;
           font-weight: 600;
-          // padding-bottom: 6.771vw;
-          padding-bottom: 3vw;
+          padding-bottom: 1vw;
         }
         .category {
           display: flex;
-          justify-content: center;
           span {
-            padding-bottom: 0.5vw;
+            padding-bottom: 1vw;
           }
           .oneDep {
-            font-size: 35px;
+            font-size: 30px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             // padding-right: 2vw;
             padding-right: 4.167vw;
           }
           .twoDep {
+            width: 100%;
+            font-size: 28px;
             display: flex;
             flex-direction: column;
-            padding-right: 2.604vw;
+            // padding-right: 2.604vw;
+            padding-right: 4.167vw;
           }
           .src {
+            width: 100%;
             display: flex;
+            align-items: flex-start;
+            .srcBox{
+             width: 230px;
+            }
           }
-          .threeDep {
-            width: 500px;
+          .threeDep {           
             display: flex;
+            .threeBox{
+              width: 200px;
+              padding-right: 1vw;
+            }
             .fourDep {
               display: flex;
               flex-direction: column;
-              margin-left: 50px;
+              margin-bottom: 20px;
+              
             }
           }
+        }
+      }
+      .tandp{
+        h3 {
+          font-size: 40px;
+          margin-bottom: 30px;
+        }
+        .tool {
+          margin-bottom: 100px;
+        }
+        .page {
         }
       }
     }

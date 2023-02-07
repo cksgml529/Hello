@@ -104,7 +104,7 @@ function Pj2() {
                   public
                 </span>
                 <div className="src">
-                  <div>
+                  <div className="srcBox">
                     <span>
                       <FcOpenedFolder />
                       src
@@ -112,7 +112,7 @@ function Pj2() {
                   </div>
                   <div>
                     <div className="threeDep">
-                      <div>
+                      <div className="threeBox">
                         <span>
                           <FcOpenedFolder />
                           assets
@@ -134,7 +134,7 @@ function Pj2() {
                       </div>
                     </div>
                     <div className="threeDep">
-                      <div>
+                      <div className="threeBox">
                         <span>
                           <FcOpenedFolder />
                           components
@@ -168,7 +168,7 @@ function Pj2() {
                       </div>
                     </div>
                     <div className="threeDep">
-                      <div>
+                      <div className="threeBox">
                         <span>
                           <FcOpenedFolder />
                           layout
@@ -190,7 +190,7 @@ function Pj2() {
                       </div>
                     </div>
                     <div className="threeDep">
-                      <div>
+                      <div className="threeBox">
                         <span>
                           <FcOpenedFolder />
                           project
@@ -230,14 +230,47 @@ function Pj2() {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article></article>
+        <article className="tandp">
+        <div className="tool">
+          <h3>make use</h3>
+          <p>Tool: GitHub / Visual Studio Code / Figma</p>
+        </div>
+
+        <div className="page">
+          <h3>페이지 구성</h3>
+          <div>
+            <h4>Header</h4>
+            <ul>
+              <li>Router-Link</li>
+              <li>Navigate</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Main</h4>
+            <ul>
+              <li>Link를 통한 페이지 이동</li>
+              <li>scroll</li>
+            </ul>
+          </div>
+        </div>
+      </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article></article>
+        <article className="problem">
+        <h3>problem & resolve</h3>
+        <div>
+          <h4>map으로 처리한 data의 offsetTop은 어떻게 구하지?</h4>
+          <div className="resolve">
+            <p>상황</p>
+            <span>
+              <BsCheck2All />
+            </span>
+            <p></p>
+          </div>
+        </div>
+      </article>
         </SwiperSlide>
-        <SwiperSlide>
-          <article></article>
-        </SwiperSlide>
+      
       </Swiper>
     </div>
   );

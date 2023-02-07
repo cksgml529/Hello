@@ -65,135 +65,152 @@ function Pj1() {
         </div>
       </article>
       <article className="dir">
-        <h3>디렉토리</h3>
-        <div className="category">
-          <div className="oneDep">
-            <span>
-              <FcOpenedFolder />
-              hello
-            </span>
-          </div>
-          <div className="twoDep">
-            <span>
-              <FcOpenedFolder />
-              build
-            </span>
-            <span>
-              <FcOpenedFolder />
-              node_modules
-            </span>
-            <span>
-              <FcOpenedFolder />
-              public
-            </span>
-            <span>
-              <FcOpenedFolder />
-              src
-            </span>
-          </div>
-          <div className="threeDep">
-            <span>
-              <FcOpenedFolder />
-              assets
-            </span>
-            <span>
-              <FcOpenedFolder />
-              components
-            </span>
-            <span>
-              <FcOpenedFolder />
-              layout
-            </span>
-            <span>
-              <FcOpenedFolder />
-              project
-            </span>
-            <span>
-              <FcOpenedFolder />
-              style
-            </span>
-          </div>
-          <div className="fourDep">
-            <div className="asset">
-              <span>
-                <FcOpenedFolder />
-                fonts
-              </span>
-              <span>
-                <FcOpenedFolder />
-                images
-              </span>
-              <span>
-                <FcOpenedFolder />
-                style
-              </span>
+            <h3>디렉토리</h3>
+            <div className="category">
+              <div className="oneDep">
+                <span>
+                  <FcOpenedFolder />
+                  hello
+                </span>
+              </div>
+              <div className="twoDep">
+                <span>
+                  <FcOpenedFolder />
+                  build
+                </span>
+                <span>
+                  <FcOpenedFolder />
+                  node_modules
+                </span>
+                <span>
+                  <FcOpenedFolder />
+                  public
+                </span>
+                <div className="src">
+                  <div className="srcBox">
+                    <span>
+                      <FcOpenedFolder />
+                      src
+                    </span>
+                  </div>
+                  <div>
+                    <div className="threeDep">
+                      <div className="threeBox">
+                        <span>
+                          <FcOpenedFolder />
+                          assets
+                        </span>
+                      </div>
+                      <div className="fourDep">
+                        <span>
+                          <FcOpenedFolder />
+                          fonts
+                        </span>
+                        <span>
+                          <FcOpenedFolder />
+                          images
+                        </span>
+                        <span>
+                          <FcOpenedFolder />
+                          style
+                        </span>
+                      </div>
+                    </div>
+                    <div className="threeDep">
+                      <div className="threeBox">
+                        <span>
+                          <FcOpenedFolder />
+                          components
+                        </span>
+                      </div>
+                      <div className="fourDep">
+                        <span>
+                          <DiJavascript1 />
+                          Last
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          MainHello
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          Skill
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          SkillList
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          WhatIDo
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          Work
+                        </span>
+                      </div>
+                    </div>
+                    <div className="threeDep">
+                      <div className="threeBox">
+                        <span>
+                          <FcOpenedFolder />
+                          layout
+                        </span>
+                      </div>
+                      <div className="fourDep">
+                        <span>
+                          <DiJavascript1 />
+                          Contact
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          Header
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          Main
+                        </span>
+                      </div>
+                    </div>
+                    <div className="threeDep">
+                      <div className="threeBox">
+                        <span>
+                          <FcOpenedFolder />
+                          project
+                        </span>
+                      </div>
+                      <div className="fourDep">
+                        <span>
+                          <DiJavascript1 />
+                          Pj1
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          Pj2
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          Pj3
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          Pj4
+                        </span>
+                        <span>
+                          <DiJavascript1 />
+                          Pj5
+                        </span>
+                      </div>
+                    </div>
+                    <span>
+                      <FcOpenedFolder />
+                      style
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div className="com">
-              <span>
-                <DiJavascript1 />
-                Last
-              </span>
-              <span>
-                <DiJavascript1 />
-                MainHello
-              </span>
-              <span>
-                <DiJavascript1 />
-                Skill
-              </span>
-              <span>
-                <DiJavascript1 />
-                SkillList
-              </span>
-              <span>
-                <DiJavascript1 />
-                WhatIDo
-              </span>
-              <span>
-                <DiJavascript1 />
-                Work
-              </span>
-            </div>
-            <div className="layout">
-              <span>
-                <DiJavascript1 />
-                Contact
-              </span>
-              <span>
-                <DiJavascript1 />
-                Header
-              </span>
-              <span>
-                <DiJavascript1 />
-                Main
-              </span>
-            </div>
-            <div>
-              <span>
-                <DiJavascript1 />
-                Pj1
-              </span>
-              <span>
-                <DiJavascript1 />
-                Pj2
-              </span>
-              <span>
-                <DiJavascript1 />
-                Pj3
-              </span>
-              <span>
-                <DiJavascript1 />
-                Pj4
-              </span>
-              <span>
-                <DiJavascript1 />
-                Pj5
-              </span>
-            </div>
-          </div>
-        </div>
-      </article>
+          </article>
       <article className="tandp">
         <div className="tool">
           <h3>make use</h3>
