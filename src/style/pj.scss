@@ -1,14 +1,22 @@
 .pj {
+  font-size: 20px;
+  h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
   article {
-    padding: 10.417vw 10vw 11vw 10vw;
+    padding: 0 9vw 11vw 9vw;
   }
   .first {
+    height: calc(100vh - 21.417vw);
+    padding-top: 10vw;
     display: flex;
     justify-content: space-between;
     h3 {
-      font-size: 28px;
+      font-weight: normal;
       text-transform: uppercase;
-      padding-bottom: 30px;
+      font-size: 25px;
+      padding-bottom: 20px;
     }
     .desBox {
       width: 50vw;
@@ -18,7 +26,7 @@
         display: flex;
         align-items: flex-start;
         h2 {
-          font-size: 45px;
+          font-size: 55px;
           font-weight: 600;
           padding-bottom: 60px;
         }
@@ -43,6 +51,7 @@
           border-radius: 50px;
           color: #5b63ec;
           text-transform: capitalize;
+          font-size: 16px;
           font-weight: 600;
           &:first-child {
             margin-right: 20px;
@@ -70,7 +79,7 @@
         transform: translateY(-980px);
       }
       .frame {
-        width: 36.458vw;
+        width: 100%;
         z-index: 999;
       }
       .pj1 {
@@ -86,14 +95,14 @@
     }
   }
   .dir {
-    font-size: 30px;
+    font-size: 25px;
     h3 {
-      font-size: 30px;
+      font-size: 40px;
       padding-bottom: 6.771vw;
     }
     .category {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       span {
         vertical-align: middle;
         padding-bottom: 15px;
@@ -132,15 +141,17 @@
       }
       .fourDep {
         padding: 8.333vw 2.604vw 0 0;
+        font-size: 25px;
+
         div {
           display: flex;
           flex-direction: column;
 
           &:nth-child(2) {
-            padding-top: 2.865vw;
+            padding-top: 3.3vw;
           }
           &:nth-child(3) {
-            padding-top: 2.865vw;
+            padding-top: 5vw;
           }
           &:nth-child(4) {
             padding-top: 2.865vw;
@@ -149,10 +160,25 @@
       }
     }
   }
-  .tool {
-  }
-  .page {
+  .tandp {
+    h3 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    .tool {
+      margin-bottom: 100px;
+    }
+    .page {
+    }
   }
   .problem {
+    h3 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
   }
 }

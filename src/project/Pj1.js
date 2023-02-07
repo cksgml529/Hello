@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import { FaHome } from "react-icons/fa";
 import { BsArrowRight, BsCheck2All } from "react-icons/bs";
 import { FcOpenedFolder } from "react-icons/fc";
@@ -9,10 +12,13 @@ import pj1 from "../assets/images/image/pj1.png";
 import react from "../assets/images/icon/react.png";
 import scss from "../assets/images/icon/scss.png";
 
-import "swiper/css";
 import "../style/pj.scss";
 
 function Pj1() {
+  const { top } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [top]);
   return (
     <div className="pj">
       <article className="first">
@@ -163,7 +169,7 @@ function Pj1() {
                 Main
               </span>
             </div>
-            <div className="pj">
+            <div>
               <span>
                 <DiJavascript1 />
                 Pj1
@@ -188,33 +194,53 @@ function Pj1() {
           </div>
         </div>
       </article>
-      <article className="tool">
-        <h3>make use</h3>
-        <p>Tool: GitHub / Visual Studio Code / Figma</p>
-      </article>
-      <article className="page">
-        <h3>페이지 구성</h3>
-        <div>
-          <h4>Header</h4>
-          <ul>
-            <li>Router-Link</li>
-            <li>Navigate</li>
-          </ul>
+      <article className="tandp">
+        <div className="tool">
+          <h3>make use</h3>
+          <p>Tool: GitHub / Visual Studio Code / Figma</p>
         </div>
-        <div>
-          <h4>Main</h4>
-          <ul>
-            <li>Link를 통한 페이지 이동</li>
-            <li>scroll</li>
-          </ul>
+
+        <div className="page">
+          <h3>페이지 구성</h3>
+          <div>
+            <h4>Header</h4>
+            <ul>
+              <li>Router-Link</li>
+              <li>Navigate</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Main</h4>
+            <ul>
+              <li>Link를 통한 페이지 이동</li>
+              <li>scroll</li>
+            </ul>
+          </div>
         </div>
       </article>
       <article className="problem">
         <h3>problem & resolve</h3>
         <div>
           <h4>map으로 처리한 data의 offsetTop은 어떻게 구하지?</h4>
+          <div className="resolve">
+            <p>상황</p>
+            <span>
+              <BsCheck2All />
+            </span>
+            <p></p>
+          </div>
         </div>
       </article>
+      <div className="next">
+        <Link to="/">
+          <div className="linkBox">
+            <span>
+              <BsArrowRight style={{ paddingRight: 10 }} />
+              Next Project
+            </span>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }
