@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hello/static/css/main.05811a61.css",
-    "main.js": "/hello/static/js/main.69854644.js",
+    "main.css": "/hello/static/css/main.c68cfd9e.css",
+    "main.js": "/hello/static/js/main.d09e2f29.js",
     "static/media/pj1.png": "/hello/static/media/pj1.70478ed53de86d349f76.png",
     "static/media/PretendardVariable.woff2": "/hello/static/media/PretendardVariable.36b3a87cd98126711b2b.woff2",
     "static/media/pj1_img.jpg": "/hello/static/media/pj1_img.08f37aa245e1db6e83dd.jpg",
@@ -10,15 +10,16 @@
     "static/media/tpj2_img.jpg": "/hello/static/media/tpj2_img.dc56852b2be16b6fd9bd.jpg",
     "static/media/whatido_flow.png": "/hello/static/media/whatido_flow.bba97e01d70d1be9f47b.png",
     "static/media/whatido_lisence.png": "/hello/static/media/whatido_lisence.2d57d98c5eb49246c48b.png",
+    "static/media/pj1_file.png": "/hello/static/media/pj1_file.ede3fd93fbe847024f61.png",
     "static/media/swipe-hand.png": "/hello/static/media/swipe-hand.572d7b350f7a06617064.png",
     "static/media/css.png": "/hello/static/media/css.0d008a2ac8641b7b90a9.png",
     "static/media/tpj2_logo.svg": "/hello/static/media/tpj2_logo.d5127c77f85823c15c67fdda4eade78a.svg",
     "index.html": "/hello/index.html",
-    "main.05811a61.css.map": "/hello/static/css/main.05811a61.css.map",
-    "main.69854644.js.map": "/hello/static/js/main.69854644.js.map"
+    "main.c68cfd9e.css.map": "/hello/static/css/main.c68cfd9e.css.map",
+    "main.d09e2f29.js.map": "/hello/static/js/main.d09e2f29.js.map"
   },
   "entrypoints": [
-    "static/css/main.05811a61.css",
-    "static/js/main.69854644.js"
+    "static/css/main.c68cfd9e.css",
+    "static/js/main.d09e2f29.js"
   ]
 }
