@@ -9,8 +9,7 @@ function Header() {
   const [on, setOn] = useState(false);
   const chageLocation = () => {
     setOn(!on);
-    if (on) return;
-    else navigate(-1);
+    if (!on) navigate(-1);
   };
 
   return (
