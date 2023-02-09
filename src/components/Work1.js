@@ -85,11 +85,6 @@ function Work1() {
       setLink(projectData[num].link);
     }
   };
-  const mouseHandler = (e) => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    setXY({ x: mouseX, y: mouseY });
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", eventHandler);
@@ -117,7 +112,6 @@ function Work1() {
         {projectData.map((item) => (
           <div
             className="workBox1"
-            onMouseMove={mouseHandler}
             key={item.id}
             ref={(item) => (topRef.current[count++] = item)}
           >

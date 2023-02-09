@@ -6,13 +6,13 @@ import scroll from "../assets/images/image/scrolldown.png";
 function MainHello() {
   const intro = [
     "처음을 생각하는",
-     "Zaaaa",
+    "",
     "변화에 준비되어있는",
-    "aaa",
+    "",
     "안정을 추구하는",
-     "aaa",
+    "",
     "계획적으로 실행하는",
-    "aaa",
+    "",
   ];
   const [text, setText] = useState("");
   const [on, setOn] = useState(false);
@@ -23,12 +23,12 @@ function MainHello() {
   };
 
   useEffect(() => {
-    const repeat = setInterval(() => { 
+    const repeat = setInterval(() => {
       if (num === intro.length) num = 0;
       onEvent();
       setNum(num + 1);
       setText(intro[num]);
-   }, 2000);
+    }, 2000);
     return () => clearInterval(repeat);
   }, [num]);
 
