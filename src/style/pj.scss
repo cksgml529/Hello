@@ -1,3 +1,4 @@
+
 .pj {
   font-size: 20px;
   h3 {
@@ -127,10 +128,9 @@
         margin-bottom: 10px;
       }
       .naming {
-        padding-bottom: 1vw;
+        padding-bottom: 2vw;
         ul {
           list-style: square;
-          // list-style-position: inside;
           li {
             padding-bottom: 0.5vw;
           }
@@ -138,13 +138,22 @@
       }
 
       .coding {
+
         ul {
           list-style: square;
           li {
-            margin-bottom: 15px;
+            margin-bottom: 1.5vw;
+
             p {
               font-size: 18px;
-              margin: 5px 0;
+              margin: 10px 0 5px 0;
+              .press{ 
+                display: inline;
+                font-size: inherit;
+                color: inherit;
+                font-weight: 700;
+              }
+              
             }
             .codeBox {
               background-color: #666;
@@ -167,7 +176,7 @@
     padding: 5vw 9vw;
     h3 {
       font-size: 50px;
-      margin-bottom: 30px;
+      margin-bottom: 100px;
     }
     .tool {
       margin-bottom: 80px;
@@ -177,7 +186,8 @@
         margin: 0 auto;
         line-height: 100px;
         text-transform: capitalize;
-
+  
+        
         &:last-child {
           border: none;
         }
@@ -187,8 +197,22 @@
           text-align: center;
           width: 230px;
           font-size: 25px;
-          font-weight: 500;
+          font-weight: 600;
           margin-right: 50px;
+          position: relative;
+          
+           &::after{
+        content: '';
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        top: 60%;
+        left: 0;
+        transform: translateY(-60%);
+        z-index: -9;
+        background-color: #ddd;
+       }
+      
         }
         img {
           width: 40px;
@@ -201,20 +225,23 @@
       .pagetable {
         margin-top: 20px;
         h4 {
-          font-size: 40px;
+          font-size: 30px;
           font-weight: 500;
-          margin-right: 10px;
+          margin: 0 10px 20px 0;
         }
+        
         .mainTxt {
           display: flex;
           align-items: center;
-          padding: 4vw 0;
+          padding: 3vw 0;
           border-top: 1px solid #000;
           position: relative;
           transition: 0.4s;
+          cursor: pointer;
           &:hover h5 {
             transform: translateX(15px);
           }
+         
           &:last-child {
             border-bottom: 1px solid #000;
           }
@@ -227,6 +254,7 @@
             ul {
               display: flex;
               flex-direction: column;
+             
             }
             h5 {
               color: #969cf3;
@@ -263,9 +291,9 @@
           }
           ul {
             display: none;
-
+            
             li {
-              margin-bottom: 10px;
+              padding: 10px 0;
             }
           }
           .check {
@@ -275,8 +303,7 @@
             top: 50%;
             right: 3%;
             transform: translate(-3%, -50%);
-            transition: 0.4s;
-            cursor: pointer;
+
             .plus {
               &::before {
                 content: "";
@@ -363,7 +390,8 @@
     }
   }
   .linkBtn {
-    padding: 5vw 9vw 3vw 9vw;
+    width: 100%;
+    padding: 0 9vw 11vw 9vw;
     display: flex;
     justify-content: space-between;
     .prev {

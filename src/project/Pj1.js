@@ -3,8 +3,8 @@ import { useLocation } from "react-router-dom";
 
 import { FaHome } from "react-icons/fa";
 import { BsArrowLeft, BsArrowRight, BsCheckAll } from "react-icons/bs";
-import { FcOpenedFolder } from "react-icons/fc";
-import { DiJavascript1 } from "react-icons/di";
+// import { FcOpenedFolder } from "react-icons/fc";
+// import { DiJavascript1 } from "react-icons/di";
 import { Link } from "react-router-dom";
 
 import pj1 from "../assets/images/image/pj1.png";
@@ -12,17 +12,27 @@ import pj1file from "../assets/images/image/pj1_file.png";
 
 import "../style/pj.scss";
 
+
 function Pj1() {
   const { top } = useLocation();
   const [on, setOn] = useState(false);
+  const onRef = useRef([]);
 
-  const pageList = () => {
-    setOn(!on);
-  };
+
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [top]);
 
+  useEffect(()=>{
+     onRef.current.forEach(item => {
+      item.addEventListener('click',()=>
+      item.classList.toggle("on")
+      );
+
+     });
+  
+  },[])
   return (
     <div className="pj">
       <article className="first">
@@ -124,7 +134,7 @@ function Pj1() {
               </li>
               <li>
                 함수표현식(화살표함수)로 사용
-                <p>ㄴ 표현식이 장황하지 않고 추론을 쉽게 함</p>
+                <p>ㄴ 표현식이 장황하지 않고 <span className="press">추론을 쉽게 함</span></p>
                 <p>ㄴ 매개변수가 하나뿐이여도 소괄호 기재</p>
                 <p>ㄴ 표현식이 한 줄을 넘길 경우 (표현식)으로 기재</p>
               </li>
@@ -168,8 +178,9 @@ function Pj1() {
         <div className="page">
           <h3>페이지 구성</h3>
           <div className="pagetable">
-            <div className={on ? "mainTxt on" : "mainTxt"} onClick={pageList}>
-              <h5>Header.js</h5>
+          <h4>&lsaquo; Header.js &rsaquo;</h4>
+            <div className={on ? "mainTxt on" : "mainTxt"} ref={(item)=>onRef.current[0]=item} style={{borderBottom:'1px solid #000',marginBottom:`100px`}}>
+              <h5>Header</h5>
               <ul>
                 <li>Router의 Link와 Navigate를 활용한 페이지 이동</li>
                 <li>useState을 통한 toggle형식 기능 구현</li>
@@ -178,9 +189,9 @@ function Pj1() {
                 <div class="plus"></div>
               </div>
             </div>
-            <h4>Main.js</h4>
-            <div>
-              <div className={on ? "mainTxt on" : "mainTxt"} onClick={pageList}>
+            <h4>&lsaquo; Main.js &rsaquo;</h4>
+
+              <div className={on ? "mainTxt on" : "mainTxt"}  ref={(item)=>onRef.current[1]=item}>
                 <h5>MainHello</h5>
                 <ul>
                   <li>useEffect와 setInterval을 활용한 배열값 반복</li>
@@ -190,7 +201,7 @@ function Pj1() {
                   <div class="plus"></div>
                 </div>
               </div>
-              <div className={on ? "mainTxt on" : "mainTxt"} onClick={pageList}>
+              <div className={on ? "mainTxt on" : "mainTxt"}ref={(item)=>onRef.current[2]=item}>
                 <h5>Work</h5>
                 <ul>
                   <li>useRef의 DOM 직접 접근</li>
@@ -204,7 +215,7 @@ function Pj1() {
                 </div>
               </div>
 
-              <div className={on ? "mainTxt on" : "mainTxt"} onClick={pageList}>
+              <div className={on ? "mainTxt on" : "mainTxt"} ref={(item)=>onRef.current[3]=item}>
                 <h5>WhatIDo</h5>
                 <ul>
                   <li>offsetTop을 통한 스크롤 이벤트</li>
@@ -214,7 +225,7 @@ function Pj1() {
                   <div class="plus"></div>
                 </div>
               </div>
-              <div className={on ? "mainTxt on" : "mainTxt"} onClick={pageList}>
+              <div className={on ? "mainTxt on" : "mainTxt"}  ref={(item)=>onRef.current[4]=item}>
                 <h5>Skill</h5>
                 <ul>
                   <li>map() 메서드의 배열 반복 반환</li>
@@ -223,7 +234,7 @@ function Pj1() {
                   <div class="plus"></div>
                 </div>
               </div>
-              <div className={on ? "mainTxt on" : "mainTxt"} onClick={pageList}>
+              <div className={on ? "mainTxt on" : "mainTxt"} ref={(item)=>onRef.current[5]=item}>
                 <h5>Last</h5>
                 <ul>
                   <li>SCSS 애니메이션</li>
@@ -232,7 +243,7 @@ function Pj1() {
                   <div class="plus"></div>
                 </div>
               </div>
-            </div>
+
           </div>
         </div>
       </article>
