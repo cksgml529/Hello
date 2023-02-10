@@ -374,7 +374,7 @@ function Pj1() {
           <Link to="/pj2">
             <div className="linkBox">
               <span>
-                <BsArrowRight style={{ paddingRight: 10 }} />
+                <BsArrowRight />
               </span>
             </div>
           </Link>
