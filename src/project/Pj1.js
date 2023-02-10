@@ -10,7 +10,7 @@ import pj1 from "../assets/images/image/pj1.png";
 import pj1file from "../assets/images/image/pj1_file.png";
 import problem1as from "../assets/images/image/problem1_asis.png";
 import problem1to from "../assets/images/image/problem1_tobe.png";
-import problem2as from "../assets/images/image/problem2_asis.PNG";
+import problem2as from "../assets/images/image/problem2_asis.png";
 import problem2to from "../assets/images/image/problem2_tobe.png";
 import problem3to from "../assets/images/image/problem3_tobe.PNG";
 import problem4as from "../assets/images/image/problem4_asis.PNG";
@@ -289,7 +289,9 @@ function Pj1() {
               </p>
             </div>
             <div className="problemCode">
+              <h5>As-is</h5>
               <img src={problem2as} alt="problem2_asis" />
+              <h5>To-be</h5>
               <img src={problem2to} alt="problem2_tobe" />
             </div>
           </li>
