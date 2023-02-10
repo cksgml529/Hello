@@ -205,7 +205,7 @@ function Pj1() {
               <ul>
                 <li>useEffect와 setInterval을 활용한 배열값 반복</li>
                 <li>
-                  SCSS의 이미지 <span>회전 애니메이션</span>
+                  SCSS의 이미지 <span>Rotate 애니메이션</span>
                 </li>
               </ul>
             </div>
@@ -232,7 +232,7 @@ function Pj1() {
               <ul>
                 <li>offsetTop을 통한 스크롤 이벤트</li>
                 <li>
-                  SCSS <span>텍스트 롤링 애니메이션</span>
+                  SCSS <span>Text Rolling 애니메이션</span>
                 </li>
               </ul>
             </div>
@@ -248,7 +248,9 @@ function Pj1() {
             <div className="mainTxt">
               <h5>Footer</h5>
               <ul>
-                <li>SCSS 텍스트 애니메이션 및 레이아웃 포지셔닝</li>
+                <li>
+                  SCSS <span>Text Rolling 애니메이션</span> 및 레이아웃 포지셔닝
+                </li>
               </ul>
             </div>
           </div>
