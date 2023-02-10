@@ -86,17 +86,17 @@
         19.4px 12.3px 26.6px rgba(0, 0, 0, 0.054),
         36.3px 23px 49.7px rgba(0, 0, 0, 0.065),
         87px 55px 119px rgba(0, 0, 0, 0.09);
-      &:hover .pj1 {
-        transform: translateY(-1100px);
-        // bottom: 100%;
+      &:hover .pjimg {
+        top: 100%;
+        transform: translateY(-100%);
       }
-      .pj1 {
+      .pjimg {
         width: 100%;
         object-fit: contain;
         position: absolute;
         top: 0;
         left: 0;
-        transition: 5s;
+        transition: 6s;
       }
     }
   }
@@ -129,7 +129,7 @@
       .naming {
         padding-bottom: 2vw;
         ul {
-          list-style: square;
+          list-style: disc;
           list-style-position: inside;
           li {
             padding-bottom: 1.3vw;
@@ -142,14 +142,13 @@
 
       .coding {
         ul {
-          list-style: square;
+          list-style: circle;
           list-style-position: inside;
           li {
             margin-bottom: 1.5vw;
 
             p {
               font-size: 18px;
-              // margin: 0.521vw 0 0.26vw 0;
               margin: 1vw 0;
               text-indent: 10px;
               .press {
@@ -161,14 +160,8 @@
               }
             }
             .codeBox {
-              background-color: #666;
-              color: #fff;
-              border-radius: 10px;
-              padding: 0.521vw 0.781vw;
-              margin-top: 2vw;
-              p {
-                font-size: 15px;
-                line-height: 1.5;
+              img {
+                margin-top: 1vw;
               }
             }
           }
@@ -257,10 +250,13 @@
             font-size: 40px;
             font-weight: 700;
             transition: 0.4s;
+            margin-right: 5vw;
           }
           ul {
             display: flex;
             flex-direction: column;
+            list-style-type: disc;
+            list-style-position: inside;
 
             li {
               padding: 10px 0;
@@ -279,7 +275,7 @@
     }
     ul {
       li {
-        margin-bottom: 2.083vw;
+        margin-bottom: 6vw;
 
         p {
           font-size: 18px;
@@ -320,15 +316,13 @@
           padding-top: 0.781vw;
         }
         span {
-          vertical-align: middle;
-          font-size: 30px;
-          color: #43a491;
-          margin-right: 0.521vw;
+          font-weight: 600;
         }
       }
     }
     .problemCode {
       display: flex;
+      justify-content: center;
       align-items: flex-start;
       margin-top: 2vw;
       &:nth-child(2) {
@@ -336,15 +330,18 @@
       }
       h5 {
         font-weight: 600;
+        margin-bottom: 0.5vw;
+      }
+      .as img {
+        margin-right: 6vw;
       }
       img {
         object-fit: contain;
-        margin-right: 5vw;
       }
     }
   }
   .linkBtn {
-    padding: 5vw 9vw 11vw 9vw;
+    padding: 5vw 9vw;
     display: flex;
     justify-content: space-between;
     .prev {

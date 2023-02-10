@@ -1,18 +1,17 @@
-
-import Last from "../components/Last";
+import Footer from "../components/Footer";
 import MainHello from "../components/MainHello";
 import Skill from "../components/Skill";
 import WhatIDo from "../components/WhatIDo";
-import Work1 from "../components/Work1";
+import Work from "../components/Work";
 
 function Main() {
   return (
     <main>
       <MainHello />
-      <Work1 />
+      <Work />
       <WhatIDo />
       <Skill />
-      <Last />
+      <Footer />
     </main>
   );
 }

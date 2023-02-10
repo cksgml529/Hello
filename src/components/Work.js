@@ -9,8 +9,8 @@ import tpj1logo from "../assets/images/image/tpj1_logo.png";
 import tpj2img from "../assets/images/image/tpj2_img.jpg";
 import tpj2logo from "../assets/images/image/tpj2_logo.svg";
 
-import "../style/work1.scss";
-function Work1() {
+import "../style/work.scss";
+function Work() {
   const projectData = [
     {
       id: 1,
@@ -89,8 +89,8 @@ function Work1() {
     window.addEventListener("scroll", eventHandler);
   }, [num]);
   return (
-    <div className="work1">
-      <div className="workdes1">
+    <div className="work">
+      <div className="workdes">
         <div className="desBox" ref={desRef}>
           <h4>work</h4>
           <h3>{title}</h3>
@@ -110,7 +110,7 @@ function Work1() {
       <div className="workWrapper">
         {projectData.map((item) => (
           <div
-            className="workBox1"
+            className="workBox"
             key={item.id}
             ref={(item) => (topRef.current[count++] = item)}
           >
@@ -125,4 +125,4 @@ function Work1() {
   );
 }
 
-export default Work1;
+export default Work;

@@ -1,16 +1,16 @@
 @keyframes point {
-  0%{
+  0% {
     width: 0;
   }
-  100%{
+  100% {
     width: 100px;
     height: 100px;
   }
 }
-.work1 {
+.work {
   display: flex;
 
-  .workdes1 {
+  .workdes {
     width: 50vw;
     width: 45%;
     text-transform: capitalize;
@@ -44,15 +44,15 @@
         color: #5b63ec;
         font-weight: 700;
         font-size: 20px;
-        .linkIn{
+        .linkIn {
           display: flex;
           align-items: center;
-          transition: .4s;
+          transition: 0.4s;
           .iconBox {
             width: 1.563vw;
             height: 1.563vw;
             position: relative;
-           
+
             span {
               padding-right: 10px;
               position: absolute;
@@ -62,7 +62,7 @@
             }
           }
         }
-        &:hover .linkIn{
+        &:hover .linkIn {
           transform: translateX(10px);
         }
       }
@@ -72,7 +72,7 @@
     width: 50vw;
     display: flex;
     flex-direction: column;
-    .workBox1 {
+    .workBox {
       height: 65vh;
       position: relative;
       margin: 150px 0;
@@ -110,18 +110,7 @@
         transform: translate(-50%, -50%);
         transition: 0.4s;
         opacity: 0;
-      }  
-      .mouse{
-        width: 30px;
-        height: 30px;
-    position: absolute;
-    z-index: 999;
-    background-color: #5b63ec;
-    border-radius: 50%;
-    top: -15px;
-    left: -15px;
-  }
+      }
     }
   }
-
 }

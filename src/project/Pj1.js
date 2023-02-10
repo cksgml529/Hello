@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 
 import pj1 from "../assets/images/image/pj1.png";
 import pj1file from "../assets/images/image/pj1_file.png";
+import long from "../assets/images/image/const.PNG";
+import array from "../assets/images/image/array.PNG";
 import problem1as from "../assets/images/image/problem1_asis.png";
 import problem1to from "../assets/images/image/problem1_tobe.png";
 import problem2as from "../assets/images/image/problem2_asis.png";
@@ -66,7 +68,7 @@ function Pj1() {
           </div>
         </div>
         <div className="pjBox">
-          <img src={pj1} alert="프로젝트1" className="pj1" />
+          <img src={pj1} alert="프로젝트1" className="pjimg" />
         </div>
       </article>
       <article className="contain">
@@ -92,7 +94,7 @@ function Pj1() {
                 </span>
               </li>
               <li>
-                객체 변수명: 소문자형 복수형 표기
+                객체 변수명: 소문자 복수형 표기
                 <span>
                   data <BsArrowRight /> datas
                 </span>
@@ -121,14 +123,7 @@ function Pj1() {
               <li>
                 긴 문자열 사용시 변수 대입 후 사용
                 <div className="codeBox">
-                  <p>
-                    <span>NG</span>axios.get(`https://pixabay.com/api/?key=KEY
-                    &q=yellow+flowers&image_type=photo`)~;
-                  </p>
-                  <p>
-                    <span>OK</span>const url = `https://pixabay.com/api/?key=
-                    KEY&q=yellow+flowers&image_type=photo`; axios.get(url)~;
-                  </p>
+                  <img src={long} alt="long_String" />
                 </div>
               </li>
               <li>
@@ -146,14 +141,7 @@ function Pj1() {
               <li>
                 객체/배열 선언, 리터럴 방식으로 표기
                 <div className="codeBox">
-                  <p>
-                    <span>NG</span>
-                    const datas = new Array(1,2,3,4);
-                  </p>
-                  <p>
-                    <span>OK</span>
-                    const datas = [1,2,3,4];
-                  </p>
+                  <img src={array} alt="Array" />
                 </div>
               </li>
             </ul>
@@ -212,15 +200,18 @@ function Pj1() {
             <div className="mainTxt">
               <h5>Work</h5>
               <ul>
-                <li>useRef의 DOM 직접 접근</li>
-                <li>Router Link를 통해 SubPage 이동</li>
                 <li>
+                  useRef의 DOM 접근과 offsetTop에 따른<span>스크롤 이벤트</span>
+                  로 map() 메서드의 <span>배열 값 반환</span>
+                </li>
+                <li>Router Link를 통해 SubPage 이동</li>
+                {/*  <li>
                   <span>offsetTop</span>을 통한 스크롤 이벤트
                 </li>
-                <li>
+               <li>
                   스크롤 이벤트에 따른 map() 메서드로 각{" "}
                   <span>project의 설명 반환</span>
-                </li>
+                </li> */}
                 <li>
                   SCSS <span>sticky</span>를 활용한 레이아웃 포지셔닝
                 </li>
@@ -264,7 +255,7 @@ function Pj1() {
             <h4>"나오는거는 잘하는데 전환할 때 끊기는 느낌이 드네?"</h4>
             <p>기존 출력되었던 배열값이 끊겨서 사라지고 새로운 배열값 출력</p>
             <div className="resolve">
-              <p>setInterval 내 time 값 조절하여 해결</p>
+              <p>setInterval 내 반복하는 time값을 2초로 늘려 해결</p>
             </div>
             <div className="problemCode">
               <div className="as">
@@ -286,15 +277,20 @@ function Pj1() {
             </p>
             <div className="resolve">
               <p>
-                useRef적용 할때 배열로 값을 줄 수 있도록 해 각각의 offsetTop
-                도출
+                useRef를 배열로 값을 받으며,
+                <span>for문을 통해 각각의 값의 offsetTop 도출</span>(count는
+                useState(0))
               </p>
             </div>
             <div className="problemCode">
-              <h5>As-is</h5>
-              <img src={problem2as} alt="problem2_asis" />
-              <h5>To-be</h5>
-              <img src={problem2to} alt="problem2_tobe" />
+              <div className="as">
+                <h5>As-is</h5>
+                <img src={problem2as} alt="problem2_asis" />
+              </div>
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem2to} alt="problem2_tobe" />
+              </div>
             </div>
           </li>
           <li>
@@ -304,12 +300,16 @@ function Pj1() {
             <div className="resolve">
               <p>
                 Main.js에서 Link까지 도달한 스크롤 값은 그대로 유지되기 때문에
-                useEffect을 활용하여 useLoation 변경 시마다 scrollTo 상단
-                이동하도록 하여 해결
+                useEffect을 활용하여
+                <span>useLoation 변경 시마다 scrollTo 상단 이동</span>하도록
+                하여 해결
               </p>
             </div>
             <div className="problemCode">
-              <img src={problem3to} alt="problem3_tobe" />
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem3to} alt="problem3_tobe" />
+              </div>
             </div>
           </li>
           <li>
@@ -318,8 +318,9 @@ function Pj1() {
             <p>clearInterval 적용해도 text 이동 시 버벅임</p>
             <div className="resolve">
               <p>
-                반복되는 text를 위해 사용한 cloneNode로 인해 clearInterval시에도
-                텍스트 버벅이는 현상이 계속되어 scss 애니메이션으로 우회
+                작성한 cloneNode 항목이 clearInterval보다 더 빨리, 더 많이
+                출력되기 때문에 텍스트 버벅이는 현상이 지속되어 scss
+                <span>Text Rolling 애니메이션으로 우회함</span>
               </p>
             </div>
             <div className="problemCode">
@@ -342,7 +343,8 @@ function Pj1() {
             <div className="resolve">
               <p>
                 Main.js에 Project 상세페이지를 Link 하면서 노출된 이슈로
-                useState 활용하여 Link contact를 toggle 형식으로 구현하여 해결
+                useState 활용하여 Link contact를 <span>toggle 형식</span>으로
+                구현하여 해결
               </p>
             </div>
             <div className="problemCode">
