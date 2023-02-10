@@ -67,7 +67,6 @@ function Work1() {
   const [title, setTitle] = useState(projectData[num].title);
   const [tag, setTag] = useState(projectData[num].tag);
   const [link, setLink] = useState(projectData[num].link);
-  const [xy, setXY] = useState({ x: 0, y: 0 });
 
   const topRef = useRef([]);
   const desRef = useRef([]);

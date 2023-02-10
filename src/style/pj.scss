@@ -87,7 +87,8 @@
         36.3px 23px 49.7px rgba(0, 0, 0, 0.065),
         87px 55px 119px rgba(0, 0, 0, 0.09);
       &:hover .pj1 {
-        transform: translateY(-1050px);
+        transform: translateY(-1100px);
+        // bottom: 100%;
       }
       .pj1 {
         width: 100%;
@@ -95,7 +96,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        transition: 6s;
+        transition: 5s;
       }
     }
   }
@@ -116,21 +117,25 @@
 
       span {
         display: block;
-        padding-top: 0.3vw;
-        font-size: 13px;
+        padding-top: 0.5vw;
+        font-size: 15px;
         color: #999;
       }
       h4 {
         font-size: 28px;
         font-weight: 500;
-        margin-bottom: 0.521vw;
+        margin-bottom: 1.8vw;
       }
       .naming {
         padding-bottom: 2vw;
         ul {
           list-style: square;
+          list-style-position: inside;
           li {
-            padding-bottom: 0.5vw;
+            padding-bottom: 1.3vw;
+            span {
+              text-indent: 28px;
+            }
           }
         }
       }
@@ -138,17 +143,21 @@
       .coding {
         ul {
           list-style: square;
+          list-style-position: inside;
           li {
             margin-bottom: 1.5vw;
 
             p {
               font-size: 18px;
-              margin: 0.521vw 0 0.26vw 0;
+              // margin: 0.521vw 0 0.26vw 0;
+              margin: 1vw 0;
+              text-indent: 10px;
               .press {
                 display: inline;
                 font-size: inherit;
                 color: inherit;
                 font-weight: 700;
+                margin-left: 0.4vw;
               }
             }
             .codeBox {
@@ -156,7 +165,7 @@
               color: #fff;
               border-radius: 10px;
               padding: 0.521vw 0.781vw;
-              margin-top: 0.521vw;
+              margin-top: 2vw;
               p {
                 font-size: 15px;
                 line-height: 1.5;
@@ -227,16 +236,18 @@
         .mainTxt {
           display: flex;
           align-items: center;
-          padding: 3vw 0;
+          padding: 2vw 0;
           border-top: 1px solid #000;
           position: relative;
           transition: 0.4s;
           cursor: pointer;
+          span {
+            font-weight: 600;
+          }
           &:hover h5 {
             transform: translateX(15px);
             color: #969cf3;
           }
-
           &:last-child {
             border-bottom: 1px solid #000;
           }
@@ -294,7 +305,7 @@
         }
         h4 {
           margin-top: 0.521vw;
-          font-size: 24px;
+          font-size: 30px;
           font-weight: 600;
         }
       }
@@ -316,6 +327,21 @@
         }
       }
     }
+    .problemCode {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 2vw;
+      &:nth-child(2) {
+        flex-direction: column;
+      }
+      h5 {
+        font-weight: 600;
+      }
+      img {
+        object-fit: contain;
+        margin-right: 5vw;
+      }
+    }
   }
   .linkBtn {
     padding: 5vw 9vw 11vw 9vw;
@@ -324,7 +350,7 @@
     .prev {
       a {
         width: 20vw;
-        padding: 0.521vw 1.042vw;
+        padding: 1vw 1.042vw;
         margin-right: 1.042vw;
         display: inline-block;
         border: 2px solid #969cf3;
@@ -357,6 +383,7 @@
           span {
             &::after {
               content: "Previos Page";
+              font-size: 20px;
             }
           }
         }
@@ -365,7 +392,7 @@
     .next {
       a {
         width: 20vw;
-        padding: 0.521vw 1.042vw;
+        padding: 1vw 1.042vw;
         display: inline-block;
         border: 2px solid #969cf3;
         border-radius: 50px;
@@ -399,6 +426,7 @@
             }
             &::before {
               content: "Next Page";
+              font-size: 20px;
             }
           }
         }

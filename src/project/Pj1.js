@@ -8,6 +8,14 @@ import { Link } from "react-router-dom";
 
 import pj1 from "../assets/images/image/pj1.png";
 import pj1file from "../assets/images/image/pj1_file.png";
+import problem1as from "../assets/images/image/problem1_asis.png";
+import problem1to from "../assets/images/image/problem1_tobe.png";
+import problem2to from "../assets/images/image/problem2_tobe.png";
+import problem3to from "../assets/images/image/problem3_tobe.PNG";
+import problem4as from "../assets/images/image/problem4_asis.PNG";
+import problem4to from "../assets/images/image/problem4_tobe.PNG";
+import problem5as from "../assets/images/image/problem5_asis.PNG";
+import problem5to from "../assets/images/image/problem5_tobe.png";
 
 import "../style/pj.scss";
 
@@ -71,12 +79,17 @@ function Pj1() {
             <h4>이름규칙</h4>
             <ul>
               <li>
-                component명: 파스칼 표기법으로 표기법으로
+                component명: 파스칼 표기법으로 표기
                 <span>
                   mainbanner <BsArrowRight /> MainBanner
                 </span>
               </li>
-              <li>변수/함수명: 카멜표기법으로 표기</li>
+              <li>
+                변수/함수명: 카멜표기법으로 표기
+                <span>
+                  openList <BsArrowRight /> openList
+                </span>
+              </li>
               <li>
                 객체 변수명: 소문자형 복수형 표기
                 <span>
@@ -120,11 +133,14 @@ function Pj1() {
               <li>
                 함수표현식(화살표함수)로 사용
                 <p>
-                  ㄴ 표현식이 장황하지 않고{" "}
+                  ㄴ 표현식이 장황하지 않고
                   <span className="press">추론을 쉽게 함</span>
                 </p>
                 <p>ㄴ 매개변수가 하나뿐이여도 소괄호 기재</p>
-                <p>ㄴ 표현식이 한 줄을 넘길 경우 (표현식)으로 기재</p>
+                <p>
+                  ㄴ 표현식이 한 줄을 넘길 경우
+                  <span className="press">(표현식)</span> 으로 기재
+                </p>
               </li>
               <li>
                 객체/배열 선언, 리터럴 방식으로 표기
@@ -173,8 +189,12 @@ function Pj1() {
             >
               <h5>Header</h5>
               <ul>
-                <li>Router의 Link와 Navigate를 활용한 페이지 이동</li>
-                <li>useState을 통한 toggle형식 기능 구현</li>
+                <li>
+                  Router의 Link와 Navigate를 활용한 <span>페이지 이동</span>
+                </li>
+                <li>
+                  useState을 통한 <span>toggle 형식</span> 기능 구현
+                </li>
               </ul>
             </div>
             <h4>&lsaquo; Main.js &rsaquo;</h4>
@@ -183,7 +203,9 @@ function Pj1() {
               <h5>MainHello</h5>
               <ul>
                 <li>useEffect와 setInterval을 활용한 배열값 반복</li>
-                <li>SCSS 애니메이션</li>
+                <li>
+                  SCSS의 이미지 <span>회전 애니메이션</span>
+                </li>
               </ul>
             </div>
             <div className="mainTxt">
@@ -191,9 +213,16 @@ function Pj1() {
               <ul>
                 <li>useRef의 DOM 직접 접근</li>
                 <li>Router Link를 통해 SubPage 이동</li>
-                <li>offsetTop을 통한 스크롤 이벤트</li>
-                <li>map() 메서드의 배열 반복 반환</li>
-                <li>SCSS sticky를 활용한 레이아웃 포지셔닝</li>
+                <li>
+                  <span>offsetTop</span>을 통한 스크롤 이벤트
+                </li>
+                <li>
+                  스크롤 이벤트에 따른 map() 메서드로 각{" "}
+                  <span>project의 설명 반환</span>
+                </li>
+                <li>
+                  SCSS <span>sticky</span>를 활용한 레이아웃 포지셔닝
+                </li>
               </ul>
             </div>
 
@@ -201,22 +230,24 @@ function Pj1() {
               <h5>WhatIDo</h5>
               <ul>
                 <li>offsetTop을 통한 스크롤 이벤트</li>
-                <li>SCSS 애니메이션</li>
+                <li>
+                  SCSS <span>텍스트 롤링 애니메이션</span>
+                </li>
               </ul>
             </div>
             <div className="mainTxt">
               <h5>Skill</h5>
               <ul>
-                <li>map() 메서드의 배열 반복 반환</li>
+                <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
               </ul>
               <div class="check">
                 <div class="plus"></div>
               </div>
             </div>
             <div className="mainTxt">
-              <h5>Last</h5>
+              <h5>Footer</h5>
               <ul>
-                <li>SCSS 애니메이션</li>
+                <li>SCSS 텍스트 애니메이션 및 레이아웃 포지셔닝</li>
               </ul>
             </div>
           </div>
@@ -230,7 +261,17 @@ function Pj1() {
             <h4>"나오는거는 잘하는데 전환할 때 끊기는 느낌이 드네?"</h4>
             <p>기존 출력되었던 배열값이 끊겨서 사라지고 새로운 배열값 출력</p>
             <div className="resolve">
-              <p>setInterval 내 time 값과 transition 값 조절하여 해결</p>
+              <p>setInterval 내 time 값 조절하여 해결</p>
+            </div>
+            <div className="problemCode">
+              <div className="as">
+                <h5>As-is</h5>
+                <img src={problem1as} alt="problem1_asis" />
+              </div>
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem1to} alt="problem1_tobe" />
+              </div>
             </div>
           </li>
           <li>
@@ -246,8 +287,12 @@ function Pj1() {
                 도출
               </p>
             </div>
+            <div className="problemCode">
+              <img src={problem2to} alt="problem2_tobe" />
+            </div>
           </li>
           <li>
+            <span className="loca">Pj1~Pj5.js</span>
             <h4>"처음부분으로 안가지?"</h4>
             <p>Project 상세페이지 이동 시 페이지 중간부터 출력</p>
             <div className="resolve">
@@ -256,6 +301,9 @@ function Pj1() {
                 useEffect을 활용하여 useLoation 변경 시마다 scrollTo 상단
                 이동하도록 하여 해결
               </p>
+            </div>
+            <div className="problemCode">
+              <img src={problem3to} alt="problem3_tobe" />
             </div>
           </li>
           <li>
@@ -268,6 +316,16 @@ function Pj1() {
                 텍스트 버벅이는 현상이 계속되어 scss 애니메이션으로 우회
               </p>
             </div>
+            <div className="problemCode">
+              <div className="as">
+                <h5>As-is</h5>
+                <img src={problem4as} alt="problem4_asis" />
+              </div>
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem4to} alt="problem4_tobe" />
+              </div>
+            </div>
           </li>
           <li>
             <span className="loca">Header.js</span>
@@ -277,9 +335,19 @@ function Pj1() {
             </p>
             <div className="resolve">
               <p>
-                Main.js에 Project 상세페이지를 Link 하면서 노출된 이슈로 Link
-                contact를 토글방식으로 하여 해결
+                Main.js에 Project 상세페이지를 Link 하면서 노출된 이슈로
+                useState 활용하여 Link contact를 toggle 형식으로 구현하여 해결
               </p>
+            </div>
+            <div className="problemCode">
+              <div className="as">
+                <h5>As-is</h5>
+                <img src={problem5as} alt="problem5_asis" />
+              </div>
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem5to} alt="problem5_tobe" />
+              </div>
             </div>
           </li>
         </ul>

@@ -7,6 +7,7 @@ import { useState } from "react";
 function Header() {
   const navigate = useNavigate();
   const [on, setOn] = useState(false);
+
   const chageLocation = () => {
     setOn(!on);
     if (!on) navigate(-1);
