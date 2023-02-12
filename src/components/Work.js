@@ -4,10 +4,10 @@ import { BsArrowRight } from "react-icons/bs";
 
 import pj1img from "../assets/images/image/pj1_img.jpg";
 import pj1logo from "../assets/images/image/pj1_logo.png";
-import tpj1img from "../assets/images/image/tpj1_img.png";
-import tpj1logo from "../assets/images/image/tpj1_logo.png";
-import tpj2img from "../assets/images/image/tpj2_img.jpg";
-import tpj2logo from "../assets/images/image/tpj2_logo.svg";
+import tpj2img from "../assets/images/image/tpj1_img.png";
+import tpj2logo from "../assets/images/image/tpj1_logo.png";
+import tpj1img from "../assets/images/image/tpj2_img.jpg";
+import tpj1logo from "../assets/images/image/tpj2_logo.svg";
 
 import "../style/work.scss";
 function Work() {
@@ -19,7 +19,7 @@ function Work() {
       logo: pj1logo,
       logoalt: "로고",
       link: "./pj1",
-      title: "1react web",
+      title: "react web1",
       tag: "#PC #개인프로젝트 #Swiper #Axios",
     },
     {
@@ -29,8 +29,8 @@ function Work() {
       logo: pj1logo,
       logoalt: "로고",
       link: "./pj2",
-      title: "2javascript web",
-      tag: "#PC #sfsd #Sasdfaser #Aasfds",
+      title: "react web2",
+      tag: "#PC #모바일 #개인프로젝트 #반응형",
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ function Work() {
       logo: pj1logo,
       logoalt: "로고",
       link: "./pj3",
-      title: "3react web1",
+      title: "javascript web",
       tag: "#aa #개인프ss로젝트 #Sasr #Afsdf",
     },
     {
@@ -49,7 +49,7 @@ function Work() {
       logo: tpj1logo,
       logoalt: "야놀자로고",
       link: "./pj4",
-      title: "4html web team",
+      title: "javascript web team",
       tag: "#PC #팀프로젝트 #Swiper #Axios",
     },
     {
@@ -59,7 +59,7 @@ function Work() {
       logo: tpj2logo,
       logoalt: "상상인증권로고",
       link: "./pj5",
-      title: "5javascript web team",
+      title: "html web team",
       tag: "#PC #팀프로젝트 #Scroll #Axios",
     },
   ];
