@@ -57,14 +57,6 @@ function Pj1() {
                 </span>
               </div>
             </Link>
-            <Link to="https://cksgml529.github.io/react_push/">
-              <div className="linkBox">
-                <span>
-                  <BsArrowRight style={{ paddingRight: 10 }} />
-                  go to webpage
-                </span>
-              </div>
-            </Link>
           </div>
         </div>
         <div className="pjBox">
@@ -205,13 +197,6 @@ function Pj1() {
                   로 map() 메서드의 <span>배열 값 반환</span>
                 </li>
                 <li>Router Link를 통해 SubPage 이동</li>
-                {/*  <li>
-                  <span>offsetTop</span>을 통한 스크롤 이벤트
-                </li>
-               <li>
-                  스크롤 이벤트에 따른 map() 메서드로 각{" "}
-                  <span>project의 설명 반환</span>
-                </li> */}
                 <li>
                   SCSS <span>sticky</span>를 활용한 레이아웃 포지셔닝
                 </li>
