@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-import { useEffect, useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
-
-import { FaHome } from "react-icons/fa";
-import { BsArrowLeft, BsArrowRight, BsCheckAll } from "react-icons/bs";
-
-import { Link } from "react-router-dom";
-
-import pj1 from "../assets/images/image/pj1.png";
-=======
-import { useEffect} from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import { FaHome } from "react-icons/fa";
@@ -17,8 +6,7 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 
-import tpj1 from "../assets/images/image/tpj1.png";
->>>>>>> 9c31cff12026a34a8c3d80ae49612c1f41205aa1
+import pj1 from "../assets/images/image/pj1.png";
 import pj1file from "../assets/images/image/pj1_file.png";
 import long from "../assets/images/image/const.PNG";
 import array from "../assets/images/image/array.PNG";
@@ -41,7 +29,6 @@ function Pj4() {
     window.scrollTo(0, 0);
   }, [top]);
 
-<<<<<<< HEAD
   return (
     <div className="pj">
       <article className="first">
@@ -395,319 +382,314 @@ function Pj4() {
       </div>
     </div>
   );
-=======
-  return <div className="pj">
-  <article className="first">
-    <div className="desBox">
-      <h4>work</h4>
-      <div className="title">
-        <h2>야놀자</h2>
-      </div>
-      <div className="txt">
-        <p>
-          <span style={{ fontWeight: 500 }}>React-router-dom</span>을 활용한
-          컴포넌트 간 전환 방식의 이해
-        </p>
-        <p>
-          기능에 맞는
-          <span style={{ fontWeight: 500, marginLeft: 5 }}>Hook</span>
-          사용으로 코드의 안정성 상승
-        </p>
-      </div>
-      <div className="link">
-        <Link to="/">
-          <div className="linkBox">
-            <span>
-              <FaHome style={{ paddingRight: 10 }} />
-              go back home
-            </span>
+  return (
+    <div className="pj">
+      <article className="first">
+        <div className="desBox">
+          <h4>work</h4>
+          <div className="title">
+            <h2>야놀자</h2>
           </div>
-        </Link>
-        <Link to="https://3teamidkjs.github.io/Yanolja_team/About/ya_About.html">
-          <div className="linkBox">
-            <span>
-              <BsArrowRight style={{ paddingRight: 10 }} />
-              go to webpage
-            </span>
+          <div className="txt">
+            <p>
+              <span style={{ fontWeight: 500 }}>React-router-dom</span>을 활용한
+              컴포넌트 간 전환 방식의 이해
+            </p>
+            <p>
+              기능에 맞는
+              <span style={{ fontWeight: 500, marginLeft: 5 }}>Hook</span>
+              사용으로 코드의 안정성 상승
+            </p>
           </div>
-        </Link>
-      </div>
-    </div>
-    <div className="pjBox">
-      <img src={tpj1} alert="팀프로젝트1" className="pjimg" />
-    </div>
-  </article>
-  <article className="contain">
-    <div className="dir">
-      <h3>디렉토리</h3>
-      <img src={pj1file} alt="tpj1 디렉토리" />
-    </div>
-    <div className="code">
-      <h3>코딩컨벤션</h3>
-      <div className="naming">
-        <h4>이름규칙</h4>
-        <ul>
-          <li>
-            component명: 카멜 표기법으로 표기
-            <span>
-              txtbox <BsArrowRight /> txtBox
-            </span>
-          </li>
-          <li>
-            함수명: 카멜표기법으로 표기
-            <span>
-              openlist <BsArrowRight /> openList
-            </span>
-          </li>
-        
-          <li>
-            이미지/아이콘명: 위치_성격 형식으로 파일이름 설정
-            <span>
-             article 내 첫번째 이미지 <BsArrowRight />
-              article_img.png
-            </span>
-          </li>
-        </ul>
-      </div>
+          <div className="link">
+            <Link to="/">
+              <div className="linkBox">
+                <span>
+                  <FaHome style={{ paddingRight: 10 }} />
+                  go back home
+                </span>
+              </div>
+            </Link>
+            <Link to="https://3teamidkjs.github.io/Yanolja_team/About/ya_About.html">
+              <div className="linkBox">
+                <span>
+                  <BsArrowRight style={{ paddingRight: 10 }} />
+                  go to webpage
+                </span>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="pjBox">
+          <img src={tpj1} alert="팀프로젝트1" className="pjimg" />
+        </div>
+      </article>
+      <article className="contain">
+        <div className="dir">
+          <h3>디렉토리</h3>
+          <img src={pj1file} alt="tpj1 디렉토리" />
+        </div>
+        <div className="code">
+          <h3>코딩컨벤션</h3>
+          <div className="naming">
+            <h4>이름규칙</h4>
+            <ul>
+              <li>
+                component명: 카멜 표기법으로 표기
+                <span>
+                  txtbox <BsArrowRight /> txtBox
+                </span>
+              </li>
+              <li>
+                함수명: 카멜표기법으로 표기
+                <span>
+                  openlist <BsArrowRight /> openList
+                </span>
+              </li>
 
-      <div className="coding">
-        <h4>코딩규칙</h4>
+              <li>
+                이미지/아이콘명: 위치_성격 형식으로 파일이름 설정
+                <span>
+                  article 내 첫번째 이미지 <BsArrowRight />
+                  article_img.png
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="coding">
+            <h4>코딩규칙</h4>
+            <ul>
+              <li>
+                코드의 파악을 위해 함수 호출코드 위에 함수 작성
+                <div className="codeBox">
+                  <img src={long} alt="long_String" />
+                </div>
+              </li>
+              <li>간결한 함수 함수 작성을 위해 화살표함수 사용 권장</li>
+              <li>
+                다중의 함수 내 작성되는 변수 외에 지역변수로 선언 권장
+                <div className="codeBox">
+                  <img src={array} alt="Array" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article className="tandp">
+        <div className="tool">
+          <h3>make use</h3>
+          <p>
+            <span>Tool</span> GitHub, Visual Studio Code
+          </p>
+          <p>
+            <span>웹표준 언어</span> HTML5
+          </p>
+          <p>
+            <span>프로그래밍 언어</span> javascript
+          </p>
+          <p>
+            <span>스타일</span> CSS
+          </p>
+        </div>
+
+        <div className="page">
+          <h3>페이지 구성</h3>
+          <div className="pagetable">
+            <h4>&lsaquo; menu &rsaquo;</h4>
+            <div
+              className="mainTxt"
+              style={{ borderBottom: "1px solid #000", marginBottom: `100px` }}
+            >
+              <h5>menu</h5>
+              <ul>
+                <li>
+                  Router의 Link와 Navigate를 활용한 <span>페이지 이동</span>
+                </li>
+                <li>
+                  useState을 통한 <span>toggle 형식</span> 기능 구현
+                </li>
+              </ul>
+            </div>
+            <h4>&lsaquo; main &rsaquo;</h4>
+
+            <div className="mainTxt">
+              <h5>mission</h5>
+              <ul>
+                <li>useEffect와 setInterval을 활용한 배열값 반복</li>
+                <li>
+                  SCSS의 이미지 <span>Rotate 애니메이션</span>
+                </li>
+              </ul>
+            </div>
+            <div className="mainTxt">
+              <h5>sectionBox</h5>
+              <ul>
+                <li>
+                  useRef의 DOM 접근과 offsetTop에 따른<span>스크롤 이벤트</span>
+                  로 map() 메서드의 <span>배열 값 반환</span>
+                </li>
+                <li>Router Link를 통해 SubPage 이동</li>
+                <li>
+                  SCSS <span>sticky</span>를 활용한 레이아웃 포지셔닝
+                </li>
+              </ul>
+            </div>
+
+            <div className="mainTxt">
+              <h5>brandVision</h5>
+              <ul>
+                <li>offsetTop을 통한 스크롤 이벤트</li>
+                <li>
+                  SCSS <span>Text Rolling 애니메이션</span>
+                </li>
+              </ul>
+            </div>
+            <div className="mainTxt">
+              <h5>history</h5>
+              <ul>
+                <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article className="problem">
+        <h3>problem & resolve</h3>
         <ul>
           <li>
-            코드의 파악을 위해 함수 호출코드 위에 함수 작성
-            <div className="codeBox">
-              <img src={long} alt="long_String" />
+            <span className="loca">MainHello.js</span>
+            <h4>"나오는거는 잘하는데 전환할 때 끊기는 느낌이 드네?"</h4>
+            <p>기존 출력되었던 배열값이 끊겨서 사라지고 새로운 배열값 출력</p>
+            <div className="resolve">
+              <p>setInterval 내 반복하는 time값을 2초로 늘려 해결</p>
+            </div>
+            <div className="problemCode">
+              <div className="as">
+                <h5>As-is</h5>
+                <img src={problem1as} alt="problem1_asis" />
+              </div>
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem1to} alt="problem1_tobe" />
+              </div>
             </div>
           </li>
           <li>
-            간결한 함수 함수 작성을 위해 화살표함수 사용 권장
-          
+            <span className="loca">Work.js</span>
+            <h4>"map()으로 처리한 data들의 offsetTop은 어떻게 구하지?"</h4>
+            <p>
+              useRef을 변수(ref=ref변수)로 적용 시에는 배열 중 처음만 적용되서
+              모든 배열의 offsetTop을 알수 없음
+            </p>
+            <div className="resolve">
+              <p>
+                useRef를 배열로 값을 받으며,
+                <span>for문을 통해 각각의 값의 offsetTop 도출</span>(count는
+                useState(0))
+              </p>
+            </div>
+            <div className="problemCode">
+              <div className="as">
+                <h5>As-is</h5>
+                <img src={problem2as} alt="problem2_asis" />
+              </div>
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem2to} alt="problem2_tobe" />
+              </div>
+            </div>
           </li>
           <li>
-            다중의 함수 내 작성되는 변수 외에 지역변수로 선언 권장
-            <div className="codeBox">
-              <img src={array} alt="Array" />
+            <span className="loca">Pj1~Pj5.js</span>
+            <h4>"처음부분으로 안가지?"</h4>
+            <p>Project 상세페이지 이동 시 페이지 중간부터 출력</p>
+            <div className="resolve">
+              <p>
+                Main.js에서 Link까지 도달한 스크롤 값은 그대로 유지되기 때문에
+                useEffect을 활용하여
+                <span>useLoation 변경 시마다 scrollTo 상단 이동</span>하도록
+                하여 해결
+              </p>
+            </div>
+            <div className="problemCode">
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem3to} alt="problem3_tobe" />
+              </div>
+            </div>
+          </li>
+          <li>
+            <span className="loca">WhatIdo.js/Last.js</span>
+            <h4>"왜 잘 가다가 버벅이지?"</h4>
+            <p>clearInterval 적용해도 text 이동 시 버벅임</p>
+            <div className="resolve">
+              <p>
+                작성한 cloneNode 항목이 clearInterval보다 더 빨리, 더 많이
+                출력되기 때문에 텍스트 버벅이는 현상이 지속되어 scss
+                <span>Text Rolling 애니메이션으로 우회함</span>
+              </p>
+            </div>
+            <div className="problemCode">
+              <div className="as">
+                <h5>As-is</h5>
+                <img src={problem4as} alt="problem4_asis" />
+              </div>
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem4to} alt="problem4_tobe" />
+              </div>
+            </div>
+          </li>
+          <li>
+            <span className="loca">Header.js</span>
+            <h4>"contact가 안들어가지네?"</h4>
+            <p>
+              Project 상세페이지에서 contact 선택 시 이전페이지인 Main.js로 이동
+            </p>
+            <div className="resolve">
+              <p>
+                Main.js에 Project 상세페이지를 Link 하면서 노출된 이슈로
+                useState 활용하여 Link contact를 <span>toggle 형식</span>으로
+                구현하여 해결
+              </p>
+            </div>
+            <div className="problemCode">
+              <div className="as">
+                <h5>As-is</h5>
+                <img src={problem5as} alt="problem5_asis" />
+              </div>
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem5to} alt="problem5_tobe" />
+              </div>
             </div>
           </li>
         </ul>
+      </article>
+      <div className="linkBtn">
+        <div className="prev">
+          <Link to="/pj5">
+            <div className="linkBox">
+              <span>
+                <BsArrowLeft style={{ paddingRight: 10 }} />
+              </span>
+            </div>
+          </Link>
+        </div>
+        <div className="next">
+          <Link to="/pj2">
+            <div className="linkBox">
+              <span>
+                <BsArrowRight />
+              </span>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
-  </article>
-  <article className="tandp">
-    <div className="tool">
-      <h3>make use</h3>
-      <p>
-        <span>Tool</span> GitHub, Visual Studio Code
-      </p>
-      <p>
-        <span>웹표준 언어</span> HTML5
-      </p>
-      <p>
-        <span>프로그래밍 언어</span> javascript
-      </p>
-      <p>
-        <span>스타일</span> CSS
-      </p>
-    </div>
-
-    <div className="page">
-      <h3>페이지 구성</h3>
-      <div className="pagetable">
-        <h4>&lsaquo; menu &rsaquo;</h4>
-        <div
-          className="mainTxt"
-          style={{ borderBottom: "1px solid #000", marginBottom: `100px` }}
-        >
-          <h5>menu</h5>
-          <ul>
-            <li>
-              Router의 Link와 Navigate를 활용한 <span>페이지 이동</span>
-            </li>
-            <li>
-              useState을 통한 <span>toggle 형식</span> 기능 구현
-            </li>
-          </ul>
-        </div>
-        <h4>&lsaquo; main &rsaquo;</h4>
-
-        <div className="mainTxt">
-          <h5>mission</h5>
-          <ul>
-            <li>useEffect와 setInterval을 활용한 배열값 반복</li>
-            <li>
-              SCSS의 이미지 <span>Rotate 애니메이션</span>
-            </li>
-          </ul>
-        </div>
-        <div className="mainTxt">
-          <h5>sectionBox</h5>
-          <ul>
-            <li>
-              useRef의 DOM 접근과 offsetTop에 따른<span>스크롤 이벤트</span>
-              로 map() 메서드의 <span>배열 값 반환</span>
-            </li>
-            <li>Router Link를 통해 SubPage 이동</li>
-            <li>
-              SCSS <span>sticky</span>를 활용한 레이아웃 포지셔닝
-            </li>
-          </ul>
-        </div>
-
-        <div className="mainTxt">
-          <h5>brandVision</h5>
-          <ul>
-            <li>offsetTop을 통한 스크롤 이벤트</li>
-            <li>
-              SCSS <span>Text Rolling 애니메이션</span>
-            </li>
-          </ul>
-        </div>
-        <div className="mainTxt">
-          <h5>history</h5>
-          <ul>
-            <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
-          </ul>
- 
-        </div>
-
-      </div>
-    </div>
-  </article>
-  <article className="problem">
-    <h3>problem & resolve</h3>
-    <ul>
-      <li>
-        <span className="loca">MainHello.js</span>
-        <h4>"나오는거는 잘하는데 전환할 때 끊기는 느낌이 드네?"</h4>
-        <p>기존 출력되었던 배열값이 끊겨서 사라지고 새로운 배열값 출력</p>
-        <div className="resolve">
-          <p>setInterval 내 반복하는 time값을 2초로 늘려 해결</p>
-        </div>
-        <div className="problemCode">
-          <div className="as">
-            <h5>As-is</h5>
-            <img src={problem1as} alt="problem1_asis" />
-          </div>
-          <div className="to">
-            <h5>To-be</h5>
-            <img src={problem1to} alt="problem1_tobe" />
-          </div>
-        </div>
-      </li>
-      <li>
-        <span className="loca">Work.js</span>
-        <h4>"map()으로 처리한 data들의 offsetTop은 어떻게 구하지?"</h4>
-        <p>
-          useRef을 변수(ref=ref변수)로 적용 시에는 배열 중 처음만 적용되서
-          모든 배열의 offsetTop을 알수 없음
-        </p>
-        <div className="resolve">
-          <p>
-            useRef를 배열로 값을 받으며,
-            <span>for문을 통해 각각의 값의 offsetTop 도출</span>(count는
-            useState(0))
-          </p>
-        </div>
-        <div className="problemCode">
-          <div className="as">
-            <h5>As-is</h5>
-            <img src={problem2as} alt="problem2_asis" />
-          </div>
-          <div className="to">
-            <h5>To-be</h5>
-            <img src={problem2to} alt="problem2_tobe" />
-          </div>
-        </div>
-      </li>
-      <li>
-        <span className="loca">Pj1~Pj5.js</span>
-        <h4>"처음부분으로 안가지?"</h4>
-        <p>Project 상세페이지 이동 시 페이지 중간부터 출력</p>
-        <div className="resolve">
-          <p>
-            Main.js에서 Link까지 도달한 스크롤 값은 그대로 유지되기 때문에
-            useEffect을 활용하여
-            <span>useLoation 변경 시마다 scrollTo 상단 이동</span>하도록
-            하여 해결
-          </p>
-        </div>
-        <div className="problemCode">
-          <div className="to">
-            <h5>To-be</h5>
-            <img src={problem3to} alt="problem3_tobe" />
-          </div>
-        </div>
-      </li>
-      <li>
-        <span className="loca">WhatIdo.js/Last.js</span>
-        <h4>"왜 잘 가다가 버벅이지?"</h4>
-        <p>clearInterval 적용해도 text 이동 시 버벅임</p>
-        <div className="resolve">
-          <p>
-            작성한 cloneNode 항목이 clearInterval보다 더 빨리, 더 많이
-            출력되기 때문에 텍스트 버벅이는 현상이 지속되어 scss
-            <span>Text Rolling 애니메이션으로 우회함</span>
-          </p>
-        </div>
-        <div className="problemCode">
-          <div className="as">
-            <h5>As-is</h5>
-            <img src={problem4as} alt="problem4_asis" />
-          </div>
-          <div className="to">
-            <h5>To-be</h5>
-            <img src={problem4to} alt="problem4_tobe" />
-          </div>
-        </div>
-      </li>
-      <li>
-        <span className="loca">Header.js</span>
-        <h4>"contact가 안들어가지네?"</h4>
-        <p>
-          Project 상세페이지에서 contact 선택 시 이전페이지인 Main.js로 이동
-        </p>
-        <div className="resolve">
-          <p>
-            Main.js에 Project 상세페이지를 Link 하면서 노출된 이슈로
-            useState 활용하여 Link contact를 <span>toggle 형식</span>으로
-            구현하여 해결
-          </p>
-        </div>
-        <div className="problemCode">
-          <div className="as">
-            <h5>As-is</h5>
-            <img src={problem5as} alt="problem5_asis" />
-          </div>
-          <div className="to">
-            <h5>To-be</h5>
-            <img src={problem5to} alt="problem5_tobe" />
-          </div>
-        </div>
-      </li>
-    </ul>
-  </article>
-  <div className="linkBtn">
-    <div className="prev">
-      <Link to="/pj5">
-        <div className="linkBox">
-          <span>
-            <BsArrowLeft style={{ paddingRight: 10 }} />
-          </span>
-        </div>
-      </Link>
-    </div>
-    <div className="next">
-      <Link to="/pj2">
-        <div className="linkBox">
-          <span>
-            <BsArrowRight />
-          </span>
-        </div>
-      </Link>
-    </div>
-  </div>
-</div>;
->>>>>>> 9c31cff12026a34a8c3d80ae49612c1f41205aa1
+  );
 }
 
 export default Pj4;

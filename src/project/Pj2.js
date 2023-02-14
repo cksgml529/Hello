@@ -29,7 +29,6 @@ function Pj2() {
     window.scrollTo(0, 0);
   }, [top]);
 
-<<<<<<< HEAD
   return (
     <div className="pj">
       <article className="first">
@@ -377,9 +376,6 @@ function Pj2() {
       </div>
     </div>
   );
-=======
-  return <div className="pj"></div>;
->>>>>>> 9c31cff12026a34a8c3d80ae49612c1f41205aa1
 }
 
 export default Pj2;
