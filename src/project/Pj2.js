@@ -57,14 +57,6 @@ function Pj2() {
                 </span>
               </div>
             </Link>
-            <Link to="https://cksgml529.github.io/react_push/">
-              <div className="linkBox">
-                <span>
-                  <BsArrowRight style={{ paddingRight: 10 }} />
-                  go to webpage
-                </span>
-              </div>
-            </Link>
           </div>
         </div>
         <div className="pjBox">
@@ -90,7 +82,7 @@ function Pj2() {
               <li>
                 변수/함수명: 카멜표기법으로 표기
                 <span>
-                  openList <BsArrowRight /> openList
+                  openlist <BsArrowRight /> openList
                 </span>
               </li>
               <li>
@@ -205,7 +197,6 @@ function Pj2() {
                   로 map() 메서드의 <span>배열 값 반환</span>
                 </li>
                 <li>Router Link를 통해 SubPage 이동</li>
-
                 <li>
                   SCSS <span>sticky</span>를 활용한 레이아웃 포지셔닝
                 </li>
@@ -226,9 +217,6 @@ function Pj2() {
               <ul>
                 <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
               </ul>
-              <div class="check">
-                <div class="plus"></div>
-              </div>
             </div>
             <div className="mainTxt">
               <h5>Footer</h5>
