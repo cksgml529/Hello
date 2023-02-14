@@ -27,6 +27,7 @@ function Pj2() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [top]);
+<<<<<<< HEAD
 
   return (
     <div className="pj">
@@ -363,6 +364,9 @@ function Pj2() {
       </div>
     </div>
   );
+=======
+  return <div className="pj2"></div>;
+>>>>>>> parent of 9c31cff (pj4,5 수정)
 }
 
 export default Pj2;

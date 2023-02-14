@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -380,6 +381,10 @@ function Pj5() {
       </div>
     </div>
   );
+=======
+function Pj5() {
+  return <div></div>;
+>>>>>>> parent of 9c31cff (pj4,5 수정)
 }
 
 export default Pj5;
