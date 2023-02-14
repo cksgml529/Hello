@@ -1,8 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 import { FaHome } from "react-icons/fa";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { BsArrowLeft, BsArrowRight, BsCheckAll } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 
@@ -82,7 +82,7 @@ function Pj1() {
               <li>
                 변수/함수명: 카멜표기법으로 표기
                 <span>
-                  openlist <BsArrowRight /> openList
+                  openList <BsArrowRight /> openList
                 </span>
               </li>
               <li>
@@ -217,7 +217,9 @@ function Pj1() {
               <ul>
                 <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
               </ul>
-             
+              <div class="check">
+                <div class="plus"></div>
+              </div>
             </div>
             <div className="mainTxt">
               <h5>Footer</h5>

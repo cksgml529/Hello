@@ -24,7 +24,6 @@ import "../style/pj.scss";
 
 function Pj2() {
   const { top } = useLocation();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [top]);
