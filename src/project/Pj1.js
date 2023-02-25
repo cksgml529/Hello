@@ -10,17 +10,17 @@ import pj1 from "../assets/images/image/pj1.png";
 import pj1file from "../assets/images/image/pj1_file.png";
 import long from "../assets/images/image/const.PNG";
 import array from "../assets/images/image/array.PNG";
-import problem1as from "../assets/images/image/problem1_asis.png";
-import problem1to from "../assets/images/image/problem1_tobe.png";
-import problem2as from "../assets/images/image/problem2_asis.png";
-import problem2to from "../assets/images/image/problem2_tobe.png";
-import problem3to from "../assets/images/image/problem3_tobe.PNG";
-import problem4as from "../assets/images/image/problem4_asis.PNG";
-import problem4to from "../assets/images/image/problem4_tobe.PNG";
-import problem5as from "../assets/images/image/problem5_asis.PNG";
-import problem5to from "../assets/images/image/problem5_tobe.png";
+import problem1as from "../assets/images/image/pj2_problem/problem1_asis.png";
+import problem1to from "../assets/images/image/pj2_problem/problem1_tobe.png";
+import problem2as from "../assets/images/image/pj2_problem/problem2_asis.png";
+import problem2to from "../assets/images/image/pj2_problem/problem2_tobe.png";
+import problem3to from "../assets/images/image/pj2_problem/problem3_tobe.PNG";
+import problem4as from "../assets/images/image/pj2_problem/problem4_asis.PNG";
+import problem4to from "../assets/images/image/pj2_problem/problem4_tobe.PNG";
+import problem5as from "../assets/images/image/pj2_problem/problem5_asis.PNG";
+import problem5to from "../assets/images/image/pj2_problem/problem5_tobe.png";
 
-import "../style/pj.scss";
+import '../style/pj1.scss';
 
 function Pj1() {
   const { top } = useLocation();
@@ -30,22 +30,21 @@ function Pj1() {
   }, [top]);
 
   return (
-    <div className="pj">
+    <div className="pj1">
       <article className="first">
         <div className="desBox">
           <h4>work</h4>
           <div className="title">
-            <h2>Hi, Hello 포트폴리오</h2>
+            <h2>제주국제공항<span>_실시간 항공현황</span></h2>
           </div>
           <div className="txt">
             <p>
-              <span style={{ fontWeight: 500 }}>React-router-dom</span>을 활용한
-              컴포넌트 간 전환 방식의 이해
+              <span>Axios</span>를 활용한 공공데이터 <span>OpenAPI</span> 활용
             </p>
+            <p>Data 포맷 <span>xml에서 json</span> 변환</p>
             <p>
-              기능에 맞는
-              <span style={{ fontWeight: 500, marginLeft: 5 }}>Hook</span>
-              사용으로 코드의 안정성 상승
+              <span style={{ fontWeight: 500}}>Heroku</span>
+              를 통해 프로젝트 배포
             </p>
           </div>
           <div className="link">
@@ -57,10 +56,18 @@ function Pj1() {
                 </span>
               </div>
             </Link>
+            <Link to="https://jejuport-node.herokuapp.com/">
+              <div className="linkBox">
+                <span>
+                  <BsArrowRight style={{ paddingRight: 10 }} />
+                  go to webpage
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="pjBox">
-          <img src={pj1} alert="프로젝트1" className="pjimg" />
+          <img src={pj1} alert="제주공항" className="pjimg" />
         </div>
       </article>
       <article className="contain">
@@ -76,22 +83,16 @@ function Pj1() {
               <li>
                 component명: 파스칼 표기법으로 표기
                 <span>
-                  mainbanner <BsArrowRight /> MainBanner
+                  jejulist <BsArrowRight /> JejuList
                 </span>
               </li>
               <li>
                 변수/함수명: 카멜표기법으로 표기
                 <span>
-                  openList <BsArrowRight /> openList
+                  selectair <BsArrowRight /> selectAir
                 </span>
               </li>
-              <li>
-                객체 변수명: 소문자 복수형 표기
-                <span>
-                  data <BsArrowRight /> datas
-                </span>
-              </li>
-
+            
               <li>
                 style명: 카멜표기법 사용
                 <span>
@@ -99,11 +100,10 @@ function Pj1() {
                 </span>
               </li>
               <li>
-                이미지/아이콘명: 이미지가 첨부될 components 첫번째
-                단어_이미지특징.확장자명으로 소문자 기재
+                이미지/아이콘명: 이미지를 쓰일 특징명을 카멜표기법으로 표기
                 <span>
-                  WhatIDo components 내 자격증 아이콘 <BsArrowRight />
-                  what_license.svg
+                  첫번째 배경 이미지 <BsArrowRight />
+                  bgImg1.jpg
                 </span>
               </li>
             </ul>
@@ -124,18 +124,10 @@ function Pj1() {
                   ㄴ 표현식이 장황하지 않고
                   <span className="press">추론을 쉽게 함</span>
                 </p>
-                <p>ㄴ 매개변수가 하나뿐이여도 소괄호 기재</p>
-                <p>
-                  ㄴ 표현식이 한 줄을 넘길 경우
-                  <span className="press">(표현식)</span> 으로 기재
-                </p>
+                <p>ㄴ 함수는 최상단에 변수와 함께 선언 <span className="press"></span></p>
+                
               </li>
-              <li>
-                객체/배열 선언, 리터럴 방식으로 표기
-                <div className="codeBox">
-                  <img src={array} alt="Array" />
-                </div>
-              </li>
+            
             </ul>
           </div>
         </div>
@@ -144,7 +136,7 @@ function Pj1() {
         <div className="tool">
           <h3>make use</h3>
           <p>
-            <span>Tool</span> GitHub, Visual Studio Code, Figma
+            <span>Tool</span> GitHub, Heroku, Visual Studio Code
           </p>
           <p>
             <span>웹표준 언어</span> HTML5
@@ -153,79 +145,73 @@ function Pj1() {
             <span>프로그래밍 언어</span> javascript
           </p>
           <p>
-            <span>라이브러리</span> react
+            <span>라이브러리</span> react, node.js
           </p>
           <p>
-            <span>스타일</span> SCSS
+            <span>스타일</span> SCSS,CSS
           </p>
         </div>
 
         <div className="page">
           <h3>페이지 구성</h3>
           <div className="pagetable">
-            <h4>&lsaquo; Header.js &rsaquo;</h4>
+            <h4>&lsaquo; server &rsaquo;</h4>
+            <div
+              className="mainTxt"
+              
+            >
+              <h5>index</h5>
+              <ul>
+                <li>
+                 express를 통한 <span>client를 server로 배포</span>
+                </li>
+
+              </ul>
+            </div>
             <div
               className="mainTxt"
               style={{ borderBottom: "1px solid #000", marginBottom: `100px` }}
             >
-              <h5>Header</h5>
+              <h5>router</h5>
               <ul>
                 <li>
-                  Router의 Link와 Navigate를 활용한 <span>페이지 이동</span>
+                  <span>request</span> 라이브러리를 활용한 openAPI <span>data 요청</span>
                 </li>
                 <li>
-                  useState을 통한 <span>toggle 형식</span> 기능 구현
+                  .env를 통해 API Key값 암호화
                 </li>
               </ul>
             </div>
-            <h4>&lsaquo; Main.js &rsaquo;</h4>
+            <h4>&lsaquo; client &rsaquo;</h4>
 
             <div className="mainTxt">
-              <h5>MainHello</h5>
+              <h5>Jeju</h5>
               <ul>
-                <li>useEffect와 setInterval을 활용한 배열값 반복</li>
+                <li>axios를 통한 server 내 data값 요청</li>
                 <li>
-                  SCSS의 이미지 <span>Rotate 애니메이션</span>
+                   <span>useState</span>로 data 배열 대입
                 </li>
               </ul>
             </div>
             <div className="mainTxt">
-              <h5>Work</h5>
+              <h5>JejuList</h5>
               <ul>
                 <li>
-                  useRef의 DOM 접근과 offsetTop에 따른<span>스크롤 이벤트</span>
-                  로 map() 메서드의 <span>배열 값 반환</span>
+                useState을 통한 <span>toggle 형식</span> 기능 구현
                 </li>
-                <li>Router Link를 통해 SubPage 이동</li>
+                <li><span>filter() 메서드</span>를 활용해 조건과 일치하는 data 도출</li>
                 <li>
-                  SCSS <span>sticky</span>를 활용한 레이아웃 포지셔닝
+                  <span>삼항연산자</span>를 통해 조건에 따라 컴포넌트 출력
                 </li>
               </ul>
             </div>
 
             <div className="mainTxt">
-              <h5>WhatIDo</h5>
+              <h5>JejuResult</h5>
               <ul>
-                <li>offsetTop을 통한 스크롤 이벤트</li>
+                <li><span>moment</span> 라이브러리를 통해 data 내 시간 포맷 변경</li>
                 <li>
-                  SCSS <span>Text Rolling 애니메이션</span>
-                </li>
-              </ul>
-            </div>
-            <div className="mainTxt">
-              <h5>Skill</h5>
-              <ul>
-                <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
-              </ul>
-              <div class="check">
-                <div class="plus"></div>
-              </div>
-            </div>
-            <div className="mainTxt">
-              <h5>Footer</h5>
-              <ul>
-                <li>
-                  SCSS <span>Text Rolling 애니메이션</span> 및 레이아웃 포지셔닝
+                 DOM의 직접적 접근을 위한 <span>useRef 사용</span>
                 </li>
               </ul>
             </div>
@@ -236,11 +222,11 @@ function Pj1() {
         <h3>problem & resolve</h3>
         <ul>
           <li>
-            <span className="loca">MainHello.js</span>
-            <h4>"나오는거는 잘하는데 전환할 때 끊기는 느낌이 드네?"</h4>
-            <p>기존 출력되었던 배열값이 끊겨서 사라지고 새로운 배열값 출력</p>
+            <span className="loca">router.js</span>
+            <h4>"json 형태만 해봤는데 xml 형태 데이터는 어떻게 불러오지?"</h4>
+            <p>xml파일이 json파일 포맷과 형태가 달라 기존에 진행하던 json파일 불러오는 방식에서는 불러오지 못함</p>
             <div className="resolve">
-              <p>setInterval 내 반복하는 time값을 2초로 늘려 해결</p>
+              <p>xml-js를 활용하여 xml파일을 json으로 변환하여 기존 json방식으로 우회</p>
             </div>
             <div className="problemCode">
               <div className="as">
@@ -254,17 +240,14 @@ function Pj1() {
             </div>
           </li>
           <li>
-            <span className="loca">Work.js</span>
-            <h4>"map()으로 처리한 data들의 offsetTop은 어떻게 구하지?"</h4>
+            <span className="loca">Jeju.js</span>
+            <h4>"data는 불러오는데 body를 못 불러오네?"</h4>
             <p>
-              useRef을 변수(ref=ref변수)로 적용 시에는 배열 중 처음만 적용되서
-              모든 배열의 offsetTop을 알수 없음
+            openAPI data는 불러오나 data 내 body.items.item 값을 불러오지 못함
             </p>
             <div className="resolve">
               <p>
-                useRef를 배열로 값을 받으며,
-                <span>for문을 통해 각각의 값의 offsetTop 도출</span>(count는
-                useState(0))
+               setupProxy.js 생성하였으나 이로 인해 해결되었는지 여부는 파악하지 못함
               </p>
             </div>
             <div className="problemCode">
@@ -279,15 +262,12 @@ function Pj1() {
             </div>
           </li>
           <li>
-            <span className="loca">Pj1~Pj5.js</span>
-            <h4>"처음부분으로 안가지?"</h4>
-            <p>Project 상세페이지 이동 시 페이지 중간부터 출력</p>
+          <span className="loca">JejuList.js</span>
+            <h4>"선택한 값에 맞춰서 값은 또 어떻게 불러오지..."</h4>
+            <p>필터링 된 값을 배열로 출력하려면 filter()를 사용해야 하나 메소드 내 if문 사용 불가</p>
             <div className="resolve">
               <p>
-                Main.js에서 Link까지 도달한 스크롤 값은 그대로 유지되기 때문에
-                useEffect을 활용하여
-                <span>useLoation 변경 시마다 scrollTo 상단 이동</span>하도록
-                하여 해결
+                filter() 메서드 내 &&(AND)와 ||(OR)을 통해 설정하여 조건값 하나하나 설정 
               </p>
             </div>
             <div className="problemCode">
@@ -298,14 +278,13 @@ function Pj1() {
             </div>
           </li>
           <li>
-            <span className="loca">WhatIdo.js/Last.js</span>
-            <h4>"왜 잘 가다가 버벅이지?"</h4>
-            <p>clearInterval 적용해도 text 이동 시 버벅임</p>
+            <span className="loca">JejuResult.js</span>
+            <h4>"검색을 했는데 왜 어떤거는 값이 안나오지?"</h4>
+            <p>특정 data 검색 시 하얀 화면만 출력함</p>
             <div className="resolve">
               <p>
-                작성한 cloneNode 항목이 clearInterval보다 더 빨리, 더 많이
-                출력되기 때문에 텍스트 버벅이는 현상이 지속되어 scss
-                <span>Text Rolling 애니메이션으로 우회함</span>
+                data 내 출력하고자 하는 객체 값이 존재하지 않아 하얀 화면 출력한 것으로
+                <span>삼항연산자</span>를 통해 data 값이 존재하지 않을 경우 대체하여 출력할 값 설정
               </p>
             </div>
             <div className="problemCode">
@@ -316,30 +295,6 @@ function Pj1() {
               <div className="to">
                 <h5>To-be</h5>
                 <img src={problem4to} alt="problem4_tobe" />
-              </div>
-            </div>
-          </li>
-          <li>
-            <span className="loca">Header.js</span>
-            <h4>"contact가 안들어가지네?"</h4>
-            <p>
-              Project 상세페이지에서 contact 선택 시 이전페이지인 Main.js로 이동
-            </p>
-            <div className="resolve">
-              <p>
-                Main.js에 Project 상세페이지를 Link 하면서 노출된 이슈로
-                useState 활용하여 Link contact를 <span>toggle 형식</span>으로
-                구현하여 해결
-              </p>
-            </div>
-            <div className="problemCode">
-              <div className="as">
-                <h5>As-is</h5>
-                <img src={problem5as} alt="problem5_asis" />
-              </div>
-              <div className="to">
-                <h5>To-be</h5>
-                <img src={problem5to} alt="problem5_tobe" />
               </div>
             </div>
           </li>

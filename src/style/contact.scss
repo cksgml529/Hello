@@ -1,18 +1,38 @@
 .contactBox{
-
-  .contact {
-    height: 100vh;
+  background-color: #5b63ec;  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contactImg{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #5b63ec;
+    padding-right: 10vw;
+    img{
+      object-fit: cover;
+    }
+    .img1{
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      transition: .3s;
+    }
+    .img2{
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin-left: -2.5vw;
+      transition: .3s;
+    }
+  }
+  .contact {
+    // width: 30%;
+    
     opacity: 85%;
     color: #fff;
     h3 {
       display: block;
       color: #ffc558;
-      font-size: 60px;
+      font-size: 80px;
       font-weight: 600;
       text-transform: capitalize;
       position: relative;
@@ -28,19 +48,20 @@
     }
     p{
       margin: 3vw 0;
-      font-size: 40px;
+      font-size: 50px;
     }
     div{
       display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
       align-items: center;
       margin-bottom: 1vw;
       svg{
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 45px;
         padding-right: 10px;
         object-fit: cover;
+      }
+      span{
+        font-size: 25px;
       }
     }
   }

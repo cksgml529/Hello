@@ -28,7 +28,7 @@ function MainHello() {
       onEvent();
       setNum(num + 1);
       setText(intro[num]);
-    }, 2000);
+    }, 1500);
     return () => clearInterval(repeat);
   }, [num]);
 

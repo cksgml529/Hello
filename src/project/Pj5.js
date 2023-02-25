@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -7,20 +6,21 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 
-import pj1file from "../assets/images/image/pj1_file.png";
+import tpj2 from "../assets/images/image/tpj2.png";
+import pj5file from "../assets/images/image/pj5_file.png";
 import long from "../assets/images/image/const.PNG";
 import array from "../assets/images/image/array.PNG";
-import problem1as from "../assets/images/image/problem1_asis.png";
-import problem1to from "../assets/images/image/problem1_tobe.png";
-import problem2as from "../assets/images/image/problem2_asis.png";
-import problem2to from "../assets/images/image/problem2_tobe.png";
-import problem3to from "../assets/images/image/problem3_tobe.PNG";
-import problem4as from "../assets/images/image/problem4_asis.PNG";
-import problem4to from "../assets/images/image/problem4_tobe.PNG";
-import problem5as from "../assets/images/image/problem5_asis.PNG";
-import problem5to from "../assets/images/image/problem5_tobe.png";
+import problem1as from "../assets/images/image/pj2_problem/problem1_asis.png";
+import problem1to from "../assets/images/image/pj2_problem/problem1_tobe.png";
+import problem2as from "../assets/images/image/pj2_problem/problem2_asis.png";
+import problem2to from "../assets/images/image/pj2_problem/problem2_tobe.png";
+import problem3to from "../assets/images/image/pj2_problem/problem3_tobe.PNG";
+import problem4as from "../assets/images/image/pj2_problem/problem4_asis.PNG";
+import problem4to from "../assets/images/image/pj2_problem/problem4_tobe.PNG";
+import problem5as from "../assets/images/image/pj2_problem/problem5_asis.PNG";
+import problem5to from "../assets/images/image/pj2_problem/problem5_tobe.png";
 
-import "../style/pj.scss";
+import '../style/pj5.scss';
 
 function Pj5() {
   const { top } = useLocation();
@@ -29,7 +29,7 @@ function Pj5() {
     window.scrollTo(0, 0);
   }, [top]);
   return (
-    <div className="pj">
+    <div className="pj5">
       <article className="first">
         <div className="desBox">
           <h4>work</h4>
@@ -67,13 +67,13 @@ function Pj5() {
           </div>
         </div>
         <div className="pjBox">
-          <img src={tpj2} alert="팀프로젝트1" className="pjimg" />
+          <img src={tpj2} alert="팀프로젝트2" className="pjimg" />
         </div>
       </article>
       <article className="contain">
         <div className="dir">
           <h3>디렉토리</h3>
-          <img src={pj1file} alt="pj1 디렉토리" />
+          <img src={pj5file} alt="pj1 디렉토리" />
         </div>
         <div className="code">
           <h3>코딩컨벤션</h3>
@@ -361,7 +361,7 @@ function Pj5() {
       </article>
       <div className="linkBtn">
         <div className="prev">
-          <Link to="/pj5">
+          <Link to="/pj4">
             <div className="linkBox">
               <span>
                 <BsArrowLeft style={{ paddingRight: 10 }} />
@@ -370,7 +370,7 @@ function Pj5() {
           </Link>
         </div>
         <div className="next">
-          <Link to="/pj2">
+          <Link to="/pj1">
             <div className="linkBox">
               <span>
                 <BsArrowRight />
@@ -381,10 +381,6 @@ function Pj5() {
       </div>
     </div>
   );
-=======
-function Pj5() {
-  return <div></div>;
->>>>>>> parent of 9c31cff (pj4,5 수정)
 }
 
 export default Pj5;

@@ -89,6 +89,7 @@
 
       &:hover .bgimgBox {
         transform: scale(1.1);
+        filter: blur(5px);
       }
       &:hover .logoBox {
         opacity: 1;

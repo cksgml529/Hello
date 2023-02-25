@@ -6,21 +6,21 @@ import { BsArrowLeft, BsArrowRight, BsCheckAll } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 
-import pj1 from "../assets/images/image/pj1.png";
+import pj3 from '../assets/images/image/pj3.png';
 import pj1file from "../assets/images/image/pj1_file.png";
 import long from "../assets/images/image/const.PNG";
 import array from "../assets/images/image/array.PNG";
-import problem1as from "../assets/images/image/problem1_asis.png";
-import problem1to from "../assets/images/image/problem1_tobe.png";
-import problem2as from "../assets/images/image/problem2_asis.png";
-import problem2to from "../assets/images/image/problem2_tobe.png";
-import problem3to from "../assets/images/image/problem3_tobe.PNG";
-import problem4as from "../assets/images/image/problem4_asis.PNG";
-import problem4to from "../assets/images/image/problem4_tobe.PNG";
-import problem5as from "../assets/images/image/problem5_asis.PNG";
-import problem5to from "../assets/images/image/problem5_tobe.png";
+import problem1as from "../assets/images/image/pj2_problem/problem1_asis.png";
+import problem1to from "../assets/images/image/pj2_problem/problem1_tobe.png";
+import problem2as from "../assets/images/image/pj2_problem/problem2_asis.png";
+import problem2to from "../assets/images/image/pj2_problem/problem2_tobe.png";
+import problem3to from "../assets/images/image/pj2_problem/problem3_tobe.PNG";
+import problem4as from "../assets/images/image/pj2_problem/problem4_asis.PNG";
+import problem4to from "../assets/images/image/pj2_problem/problem4_tobe.PNG";
+import problem5as from "../assets/images/image/pj2_problem/problem5_asis.PNG";
+import problem5to from "../assets/images/image/pj2_problem/problem5_tobe.png";
 
-import "../style/pj.scss";
+import '../style/pj3.scss';
 
 function Pj3() {
   const { top } = useLocation();
@@ -30,22 +30,19 @@ function Pj3() {
   }, [top]);
 
   return (
-    <div className="pj">
+    <div className="pj3">
       <article className="first">
         <div className="desBox">
           <h4>work</h4>
           <div className="title">
-            <h2>Hi, Hello 포트폴리오</h2>
+            <h2>디자인코코</h2>
           </div>
           <div className="txt">
             <p>
-              <span style={{ fontWeight: 500 }}>React-router-dom</span>을 활용한
-              컴포넌트 간 전환 방식의 이해
+              <span style={{ fontWeight: 500 }}>스크롤 이벤트</span>를 활용하여 가독성 높은 페이지 구성 능력 상승
             </p>
             <p>
-              기능에 맞는
-              <span style={{ fontWeight: 500, marginLeft: 5 }}>Hook</span>
-              사용으로 코드의 안정성 상승
+              window 객체 속성의 이해도 및 효과적인 코드 활용 및 구현
             </p>
           </div>
           <div className="link">
@@ -68,7 +65,7 @@ function Pj3() {
           </div>
         </div>
         <div className="pjBox">
-          <img src={pj1} alert="프로젝트1" className="pjimg" />
+          <img src={pj3} alert="프로젝트1" className="pjimg" />
         </div>
       </article>
       <article className="contain">
@@ -362,7 +359,7 @@ function Pj3() {
       </article>
       <div className="linkBtn">
         <div className="prev">
-          <Link to="/pj5">
+          <Link to="/pj2">
             <div className="linkBox">
               <span>
                 <BsArrowLeft style={{ paddingRight: 10 }} />
@@ -371,7 +368,7 @@ function Pj3() {
           </Link>
         </div>
         <div className="next">
-          <Link to="/pj2">
+          <Link to="/pj4">
             <div className="linkBox">
               <span>
                 <BsArrowRight />
