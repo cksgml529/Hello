@@ -6,7 +6,7 @@ import { BsArrowLeft, BsArrowRight, BsCheckAll } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 
-import pj1 from "../assets/images/image/pj1.png";
+import pj2 from "../assets/images/image/pj2.png";
 import pj2file from "../assets/images/image/pj2_file.png";
 import long from "../assets/images/image/const.PNG";
 import array from "../assets/images/image/array.PNG";
@@ -59,7 +59,7 @@ function Pj2() {
           </div>
         </div>
         <div className="pjBox">
-          <img src={pj1} alert="프로젝트1" className="pjimg" />
+          <img src={pj2} alert="프로젝트1" className="pjimg" />
         </div>
       </article>
       <article className="contain">

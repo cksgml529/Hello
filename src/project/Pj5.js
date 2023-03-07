@@ -170,25 +170,9 @@ function Pj5() {
         <div className="page">
           <h3>페이지 구성</h3>
           <div className="pagetable">
-            <h4>&lsaquo; Header.js &rsaquo;</h4>
-            <div
-              className="mainTxt"
-              style={{ borderBottom: "1px solid #000", marginBottom: `100px` }}
-            >
-              <h5>Header</h5>
-              <ul>
-                <li>
-                  Router의 Link와 Navigate를 활용한 <span>페이지 이동</span>
-                </li>
-                <li>
-                  useState을 통한 <span>toggle 형식</span> 기능 구현
-                </li>
-              </ul>
-            </div>
-            <h4>&lsaquo; Main.js &rsaquo;</h4>
-
+            {/* <h4>&lsaquo; Header.js &rsaquo;</h4> */}
             <div className="mainTxt">
-              <h5>MainHello</h5>
+              <h5>banner</h5>
               <ul>
                 <li>useEffect와 setInterval을 활용한 배열값 반복</li>
                 <li>
@@ -197,20 +181,13 @@ function Pj5() {
               </ul>
             </div>
             <div className="mainTxt">
-              <h5>Work</h5>
+              <h5>first_visit</h5>
               <ul>
                 <li>
                   useRef의 DOM 접근과 offsetTop에 따른<span>스크롤 이벤트</span>
                   로 map() 메서드의 <span>배열 값 반환</span>
                 </li>
-                <li>Router Link를 통해 SubPage 이동</li>
-                {/*  <li>
-              <span>offsetTop</span>을 통한 스크롤 이벤트
-            </li>
-           <li>
-              스크롤 이벤트에 따른 map() 메서드로 각{" "}
-              <span>project의 설명 반환</span>
-            </li> */}
+                <li>Router Link를 통해 SubPage 이동</li>  
                 <li>
                   SCSS <span>sticky</span>를 활용한 레이아웃 포지셔닝
                 </li>
@@ -218,7 +195,7 @@ function Pj5() {
             </div>
 
             <div className="mainTxt">
-              <h5>WhatIDo</h5>
+              <h5>rolling</h5>
               <ul>
                 <li>offsetTop을 통한 스크롤 이벤트</li>
                 <li>
@@ -227,7 +204,7 @@ function Pj5() {
               </ul>
             </div>
             <div className="mainTxt">
-              <h5>Skill</h5>
+              <h5>product</h5>
               <ul>
                 <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
               </ul>
@@ -236,7 +213,31 @@ function Pj5() {
               </div>
             </div>
             <div className="mainTxt">
-              <h5>Footer</h5>
+              <h5>cash_info</h5>
+              <ul>
+                <li>
+                  SCSS <span>Text Rolling 애니메이션</span> 및 레이아웃 포지셔닝
+                </li>
+              </ul>
+            </div>
+            <div className="mainTxt">
+              <h5>last_menu</h5>
+              <ul>
+                <li>
+                  SCSS <span>Text Rolling 애니메이션</span> 및 레이아웃 포지셔닝
+                </li>
+              </ul>
+            </div>
+            <div className="mainTxt">
+              <h5>notice</h5>
+              <ul>
+                <li>
+                  SCSS <span>Text Rolling 애니메이션</span> 및 레이아웃 포지셔닝
+                </li>
+              </ul>
+            </div>
+            <div className="mainTxt">
+              <h5>footer</h5>
               <ul>
                 <li>
                   SCSS <span>Text Rolling 애니메이션</span> 및 레이아웃 포지셔닝

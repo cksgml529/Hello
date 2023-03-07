@@ -7,6 +7,7 @@ import { BsArrowLeft, BsArrowRight, BsCheckAll } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import pj3 from '../assets/images/image/pj3.png';
+import pj3Login from '../assets/images/image/pj3_login.png';
 import pj1file from "../assets/images/image/pj1_file.png";
 import long from "../assets/images/image/const.PNG";
 import array from "../assets/images/image/array.PNG";
@@ -41,6 +42,7 @@ function Pj3() {
             <p>
               <span style={{ fontWeight: 500 }}>스크롤 이벤트</span>를 활용하여 가독성 높은 페이지 구성 능력 상승
             </p>
+            <p>Form 태그 및 <span>Kakao API</span>를 활용한 로그인 페이지 구성 </p>
             <p>
               window 객체 속성의 이해도 및 효과적인 코드 활용 및 구현
             </p>
@@ -54,7 +56,7 @@ function Pj3() {
                 </span>
               </div>
             </Link>
-            <Link to="https://cksgml529.github.io/react_push/">
+            <Link to="https://cksgml529.github.io/web_coco/index.html">
               <div className="linkBox">
                 <span>
                   <BsArrowRight style={{ paddingRight: 10 }} />
@@ -65,8 +67,11 @@ function Pj3() {
           </div>
         </div>
         <div className="pjBox">
-          <img src={pj3} alert="프로젝트1" className="pjimg" />
+          <img src={pj3} alert="디자인코코" className="pjimg" />
         </div>
+          {/* <div className="pjLogin">
+          <img src={pj3Login} alert="디자인코코_로그인"/>
+          </div> */}
       </article>
       <article className="contain">
         <div className="dir">

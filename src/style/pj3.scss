@@ -105,6 +105,17 @@
         transition: 6s;
       }
     }
+    .pjLogin {
+      width: 20vw;
+      position: absolute;
+      right: 5vw;
+      top: 75%;
+      transform: translateY(-75%);
+     img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
   }
   .contain {
     font-size: 20px;

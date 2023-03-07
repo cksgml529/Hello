@@ -84,7 +84,6 @@
       position: relative;
       display: flex;
       justify-content: flex-start;
-      overflow: hidden;
       box-shadow: 2.4px 1.5px 3.3px rgba(0, 0, 0, 0.025),
         5.8px 3.7px 7.9px rgba(0, 0, 0, 0.036),
         10.9px 6.9px 14.9px rgba(0, 0, 0, 0.045),
@@ -95,6 +94,16 @@
       .pjimg {
         width: 100%;
         object-fit: contain;
+      }
+      .pjTBox {
+        width: 20vw;
+        position: absolute;
+        right: -10%;
+        bottom: -20%;
+       img {
+          width: 100%;
+          object-fit: contain;
+        }
       }
     }
   }

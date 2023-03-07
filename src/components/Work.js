@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 
-import pj1img from "../assets/images/image/pj1_img.jpg";
+import pj1img from "../assets/images/image/jejuImg1.jpg";
 import pj1logo from "../assets/images/image/pj1_logo.do";
 import pj2img from "../assets/images/image/pj2_img.png";
 import pj2logo from "../assets/images/image/logo.png";
@@ -24,7 +24,7 @@ function Work() {
       logoalt: "로고",
       link: "./pj1",
       title: "react web1",
-      tag: "#PC #개인프로젝트 #node.js #OpenAPI",
+      tag: "#반응형(Tablet+PC) #개인프로젝트 #node.js #OpenAPI",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ function Work() {
       logoalt: "로고",
       link: "./pj2",
       title: "react web2",
-      tag: "#반응형 #개인프로젝트 #Router #map()",
+      tag: "#PC #개인프로젝트 #Router #map()",
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ function Work() {
       logoalt: "로고",
       link: "./pj3",
       title: "javascript web",
-      tag: "#PC #개인프로젝트 #Swiper #Youtube_API",
+      tag: "#PC #개인프로젝트 #Swiper #로그인",
     },
     {
       id: 4,

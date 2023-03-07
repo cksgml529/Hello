@@ -102,7 +102,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        transition: 6s;
+        transition: 3s;
       }
     }
   }
@@ -257,6 +257,7 @@
             font-weight: 700;
             transition: 0.4s;
             margin-right: 5vw;
+            text-transform: capitalize;
           }
           ul {
             display: flex;

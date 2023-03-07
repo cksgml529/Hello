@@ -7,18 +7,18 @@ import { BsArrowLeft, BsArrowRight, BsCheckAll } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import pj1 from "../assets/images/image/pj1.png";
+import pj1t from "../assets/images/image/pj1_t.png";
 import pj1file from "../assets/images/image/pj1_file.png";
 import long from "../assets/images/image/const.PNG";
 import array from "../assets/images/image/array.PNG";
-import problem1as from "../assets/images/image/pj2_problem/problem1_asis.png";
-import problem1to from "../assets/images/image/pj2_problem/problem1_tobe.png";
-import problem2as from "../assets/images/image/pj2_problem/problem2_asis.png";
-import problem2to from "../assets/images/image/pj2_problem/problem2_tobe.png";
-import problem3to from "../assets/images/image/pj2_problem/problem3_tobe.PNG";
-import problem4as from "../assets/images/image/pj2_problem/problem4_asis.PNG";
-import problem4to from "../assets/images/image/pj2_problem/problem4_tobe.PNG";
-import problem5as from "../assets/images/image/pj2_problem/problem5_asis.PNG";
-import problem5to from "../assets/images/image/pj2_problem/problem5_tobe.png";
+import problem1to from "../assets/images/image/pj1_problem/problem1_tobe.png";
+import problem2to from "../assets/images/image/pj1_problem/problem2_tobe.png";
+import problem3to from "../assets/images/image/pj1_problem/problem3_tobe.PNG";
+import problem4as from "../assets/images/image/pj1_problem/problem4_asis.png";
+import problem4to from "../assets/images/image/pj1_problem/problem4_tobe.PNG";
+import problem5as from "../assets/images/image/pj1_problem/problem5_asis.png";
+import problem5to from "../assets/images/image/pj1_problem/problem5_tobe.PNG";
+
 
 import '../style/pj1.scss';
 
@@ -68,6 +68,9 @@ function Pj1() {
         </div>
         <div className="pjBox">
           <img src={pj1} alert="제주공항" className="pjimg" />
+        <div className="pjTBox">
+          <img src={pj1t} alert="제주공항 태블릿"/>
+          </div>
         </div>
       </article>
       <article className="contain">
@@ -229,10 +232,6 @@ function Pj1() {
               <p>xml-js를 활용하여 xml파일을 json으로 변환하여 기존 json방식으로 우회</p>
             </div>
             <div className="problemCode">
-              <div className="as">
-                <h5>As-is</h5>
-                <img src={problem1as} alt="problem1_asis" />
-              </div>
               <div className="to">
                 <h5>To-be</h5>
                 <img src={problem1to} alt="problem1_tobe" />
@@ -251,10 +250,6 @@ function Pj1() {
               </p>
             </div>
             <div className="problemCode">
-              <div className="as">
-                <h5>As-is</h5>
-                <img src={problem2as} alt="problem2_asis" />
-              </div>
               <div className="to">
                 <h5>To-be</h5>
                 <img src={problem2to} alt="problem2_tobe" />
@@ -262,12 +257,34 @@ function Pj1() {
             </div>
           </li>
           <li>
-          <span className="loca">JejuList.js</span>
-            <h4>"선택한 값에 맞춰서 값은 또 어떻게 불러오지..."</h4>
-            <p>필터링 된 값을 배열로 출력하려면 filter()를 사용해야 하나 메소드 내 if문 사용 불가</p>
+            {/* <span className="loca">Jeju.js</span> */}
+            <h4>"미디어쿼리 하면 왜 태블릿 화면이 설정한 값 대로 적용이 안돼는거지?"</h4>
+            <p>
+            PC 및 Tablet 화면 내 grid-column 값 설정하였으나 PC화면 기준 값으로 고정되어 변경되지 않음
+            </p>
             <div className="resolve">
               <p>
-                filter() 메서드 내 &&(AND)와 ||(OR)을 통해 설정하여 조건값 하나하나 설정 
+               기본값(PC)에서 같은 값으로 grid-template-columns 설정하고 grid-column 미설정하여 Tablet에서는 설정한 값으로 전환 가능할 수 있도록 함
+              </p>
+            </div>
+            <div className="problemCode">
+              <div className="to">
+                <h5>As-is</h5>
+                <img src={problem5as} alt="problem5_tobe" />
+              </div>
+              <div className="to">
+                <h5>To-be</h5>
+                <img src={problem5to} alt="problem5_tobe" />
+              </div>
+            </div>
+          </li>
+          <li>
+          <span className="loca">JejuList.js</span>
+            <h4>"선택한 값에 맞춰서 값은 또 어떻게 불러오지..."</h4>
+            <p>필터링 된 값을 배열로 출력하려면 filter()를 사용해야 하지만 해당 메소드 내 if문 사용 불가</p>
+            <div className="resolve">
+              <p>
+                filter() 메서드 내 &&(AND)와 ||(OR)을 통해 설정하여 조건값 하나하나 설정 후 useState에 값 저장
               </p>
             </div>
             <div className="problemCode">
@@ -284,7 +301,7 @@ function Pj1() {
             <div className="resolve">
               <p>
                 data 내 출력하고자 하는 객체 값이 존재하지 않아 하얀 화면 출력한 것으로
-                <span>삼항연산자</span>를 통해 data 값이 존재하지 않을 경우 대체하여 출력할 값 설정
+                <span> 삼항연산자</span>를 통해 data 값이 존재하지 않을 경우 대체하여 출력할 값 설정
               </p>
             </div>
             <div className="problemCode">

@@ -8,17 +8,11 @@ import { Link } from "react-router-dom";
 
 import tpj1 from "../assets/images/image/tpj1.png"
 import pj4file from "../assets/images/image/pj4_file.png";
-import long from "../assets/images/image/const.PNG";
-import array from "../assets/images/image/array.PNG";
+
 import problem1as from "../assets/images/image/pj4_problem/problem1_asis.png";
 import problem1to from "../assets/images/image/pj4_problem/problem1_tobe.png";
-import problem2as from "../assets/images/image/pj2_problem/problem2_asis.png";
-import problem2to from "../assets/images/image/pj2_problem/problem2_tobe.png";
-import problem3to from "../assets/images/image/pj2_problem/problem3_tobe.PNG";
-import problem4as from "../assets/images/image/pj2_problem/problem4_asis.PNG";
-import problem4to from "../assets/images/image/pj2_problem/problem4_tobe.PNG";
-import problem5as from "../assets/images/image/pj2_problem/problem5_asis.PNG";
-import problem5to from "../assets/images/image/pj2_problem/problem5_tobe.png";
+import problem2as from "../assets/images/image/pj4_problem/problem2_asis.png";
+import problem2to from "../assets/images/image/pj4_problem/problem2_tobe.png";
 
 import '../style/pj4.scss';
 
@@ -39,9 +33,8 @@ function Pj4() {
             <h2>야놀자</h2>
           </div>
           <div className="txt">
-            <p>
-              <span style={{ fontWeight: 500 }}>React-router-dom</span>을 활용한
-              컴포넌트 간 전환 방식의 이해
+            <p>현 스크롤 위치에 따른
+              <span style={{ fontWeight: 500 }}> Scroll Event 구현</span>
             </p>
             <p>
               기능에 맞는
@@ -110,16 +103,11 @@ function Pj4() {
             <ul>
               <li>
                 지역변수로 변수선언 권장
-                <div className="codeBox">
-                  <img src={long} alt="long_String" />
-                </div>
               </li>
               <li>코드 파악을 위해 호출되는 코드 위에 함수 작성. 화살표 함수 사용 권장</li>
               <li>
                 git add, commit, push 명령어 미적용 상태로 pull 동작했을 경우 에러 발생 위험 높기 때문에 git status 체크하기
-                <div className="codeBox">
-                  <img src={array} alt="Array" />
-                </div>
+           
               </li>
             </ul>
           </div>
@@ -177,21 +165,21 @@ function Pj4() {
                 <li>
                  현재의 스크롤 위치에 따라 <span>text rolling, 이미지 출력</span>효과
                 </li>
-                <li>forEach 사용으로 다수의 항목에 클래스명 추가</li>
+                <li>text fade-up 애니메이션</li>
               </ul>
             </div>
 
             <div className="mainTxt">
               <h5>history</h5>
               <ul>
-                <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
+              <li>forEach 사용으로 다수의 항목에 클래스명 추가</li>
               </ul>
             </div>
 
             <div className="mainTxt">
               <h5>CI Logo</h5>
               <ul>
-                <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
+                <li><span>가상요소(::after, ::before)</span>를 활용한 스타일 구성 </li>
               </ul>
             </div>
           </div>
@@ -220,16 +208,13 @@ function Pj4() {
           </li>
           <li>
             <span className="loca">Work.js</span>
-            <h4>"map()으로 처리한 data들의 offsetTop은 어떻게 구하지?"</h4>
+            <h4>"이미지나 텍스트가 나오는 타이밍이 안맞네?"</h4>
             <p>
-              useRef을 변수(ref=ref변수)로 적용 시에는 배열 중 처음만 적용되서
-              모든 배열의 offsetTop을 알수 없음
+              스크롤 할때 출력하는 이미지나 텍스트가 타이밍이 맞지 않음
             </p>
             <div className="resolve">
               <p>
-                useRef를 배열로 값을 받으며,
-                <span>for문을 통해 각각의 값의 offsetTop 도출</span>(count는
-                useState(0))
+              scrollY값과 offsetTop - 특정값(수동설정)을 비교하여 타이밍 조정
               </p>
             </div>
             <div className="problemCode">
@@ -243,71 +228,7 @@ function Pj4() {
               </div>
             </div>
           </li>
-          <li>
-            <span className="loca">Pj1~Pj5.js</span>
-            <h4>"처음부분으로 안가지?"</h4>
-            <p>Project 상세페이지 이동 시 페이지 중간부터 출력</p>
-            <div className="resolve">
-              <p>
-                Main.js에서 Link까지 도달한 스크롤 값은 그대로 유지되기 때문에
-                useEffect을 활용하여
-                <span>useLoation 변경 시마다 scrollTo 상단 이동</span>하도록
-                하여 해결
-              </p>
-            </div>
-            <div className="problemCode">
-              <div className="to">
-                <h5>To-be</h5>
-                <img src={problem3to} alt="problem3_tobe" />
-              </div>
-            </div>
-          </li>
-          <li>
-            <span className="loca">WhatIdo.js/Last.js</span>
-            <h4>"왜 잘 가다가 버벅이지?"</h4>
-            <p>clearInterval 적용해도 text 이동 시 버벅임</p>
-            <div className="resolve">
-              <p>
-                작성한 cloneNode 항목이 clearInterval보다 더 빨리, 더 많이
-                출력되기 때문에 텍스트 버벅이는 현상이 지속되어 scss
-                <span>Text Rolling 애니메이션으로 우회함</span>
-              </p>
-            </div>
-            <div className="problemCode">
-              <div className="as">
-                <h5>As-is</h5>
-                <img src={problem4as} alt="problem4_asis" />
-              </div>
-              <div className="to">
-                <h5>To-be</h5>
-                <img src={problem4to} alt="problem4_tobe" />
-              </div>
-            </div>
-          </li>
-          <li>
-            <span className="loca">Header.js</span>
-            <h4>"contact가 안들어가지네?"</h4>
-            <p>
-              Project 상세페이지에서 contact 선택 시 이전페이지인 Main.js로 이동
-            </p>
-            <div className="resolve">
-              <p>
-                Main.js에 Project 상세페이지를 Link 하면서 노출된 이슈로
-                useState 활용하여 Link contact를 <span>toggle 형식</span>으로
-                구현하여 해결
-              </p>
-            </div>
-            <div className="problemCode">
-              <div className="as">
-                <h5>As-is</h5>
-                <img src={problem5as} alt="problem5_asis" />
-              </div>
-              <div className="to">
-                <h5>To-be</h5>
-                <img src={problem5to} alt="problem5_tobe" />
-              </div>
-            </div>
-          </li>
+         
         </ul>
       </article>
       <div className="linkBtn">
