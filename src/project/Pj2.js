@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 import pj2 from "../assets/images/image/pj2.png";
 import pj2file from "../assets/images/image/pj2_file.png";
-import long from "../assets/images/image/const.PNG";
 import array from "../assets/images/image/array.PNG";
 import problem1as from "../assets/images/image/pj2_problem/problem1_asis.png";
 import problem1to from "../assets/images/image/pj2_problem/problem1_tobe.png";
@@ -111,18 +110,9 @@ function Pj2() {
           <div className="coding">
             <h4>코딩규칙</h4>
             <ul>
-              <li>
-                긴 문자열 사용시 변수 대입 후 사용
-                <div className="codeBox">
-                  <img src={long} alt="long_String" />
-                </div>
-              </li>
+              
               <li>
                 함수표현식(화살표함수)로 사용
-                <p>
-                  ㄴ 표현식이 장황하지 않고
-                  <span className="press">추론을 쉽게 함</span>
-                </p>
                 <p>ㄴ 매개변수가 하나뿐이여도 소괄호 기재</p>
                 <p>
                   ㄴ 표현식이 한 줄을 넘길 경우
@@ -282,7 +272,7 @@ function Pj2() {
               <p>
                 Main.js에서 Link까지 도달한 스크롤 값은 그대로 유지되기 때문에
                 useEffect을 활용하여
-                <span>useLoation 변경 시마다 scrollTo 상단 이동</span>하도록
+                <span> useLoation 변경 시마다 scrollTo 상단 이동</span>하도록
                 하여 해결
               </p>
             </div>

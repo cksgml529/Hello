@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 import pj1 from "../assets/images/image/pj1.png";
 import pj1t from "../assets/images/image/pj1_t.png";
 import pj1file from "../assets/images/image/pj1_file.png";
-import long from "../assets/images/image/const.PNG";
-import array from "../assets/images/image/array.PNG";
+import pj1coding from "../assets/images/image/pj1_coding.png";
+import mapimg from "../assets/images/image/pj1_map.png";
 import problem1to from "../assets/images/image/pj1_problem/problem1_tobe.png";
 import problem2to from "../assets/images/image/pj1_problem/problem2_tobe.png";
 import problem3to from "../assets/images/image/pj1_problem/problem3_tobe.PNG";
@@ -106,7 +106,7 @@ function Pj1() {
                 이미지/아이콘명: 이미지를 쓰일 특징명을 카멜표기법으로 표기
                 <span>
                   첫번째 배경 이미지 <BsArrowRight />
-                  bgImg1.jpg
+                  jejuImg1.jpg
                 </span>
               </li>
             </ul>
@@ -118,7 +118,13 @@ function Pj1() {
               <li>
                 긴 문자열 사용시 변수 대입 후 사용
                 <div className="codeBox">
-                  <img src={long} alt="long_String" />
+                  <img src={pj1coding} alt="coding_rule" />
+                </div>
+              </li>
+              <li>
+                반복되는 구성 형식에는 배열로 data 처리 후 map() 메소드로 출력
+                <div className="codeBox">
+                  <img src={mapimg} alt="coding_map" />
                 </div>
               </li>
               <li>
@@ -257,7 +263,7 @@ function Pj1() {
             </div>
           </li>
           <li>
-            {/* <span className="loca">Jeju.js</span> */}
+
             <h4>"미디어쿼리 하면 왜 태블릿 화면이 설정한 값 대로 적용이 안돼는거지?"</h4>
             <p>
             PC 및 Tablet 화면 내 grid-column 값 설정하였으나 PC화면 기준 값으로 고정되어 변경되지 않음

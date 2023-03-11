@@ -33,13 +33,11 @@ function Pj4() {
             <h2>야놀자</h2>
           </div>
           <div className="txt">
-            <p>현 스크롤 위치에 따른
+            <p>현재 스크롤 위치에 따른
               <span style={{ fontWeight: 500 }}> Scroll Event 구현</span>
             </p>
             <p>
-              기능에 맞는
-              <span style={{ fontWeight: 500, marginLeft: 5 }}>Hook</span>
-              사용으로 코드의 안정성 상승
+              <span style={{ fontWeight: 500, marginLeft: 5 }}>clientHeight, offsetHeight</span> 사용으로 인한 스크롤 위치값 파악 능력 상승
             </p>
           </div>
           <div className="link">

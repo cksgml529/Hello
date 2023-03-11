@@ -7,19 +7,14 @@ import { BsArrowLeft, BsArrowRight, BsCheckAll } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import pj3 from '../assets/images/image/pj3.png';
-import pj3Login from '../assets/images/image/pj3_login.png';
-import pj1file from "../assets/images/image/pj1_file.png";
-import long from "../assets/images/image/const.PNG";
-import array from "../assets/images/image/array.PNG";
-import problem1as from "../assets/images/image/pj2_problem/problem1_asis.png";
-import problem1to from "../assets/images/image/pj2_problem/problem1_tobe.png";
-import problem2as from "../assets/images/image/pj2_problem/problem2_asis.png";
-import problem2to from "../assets/images/image/pj2_problem/problem2_tobe.png";
-import problem3to from "../assets/images/image/pj2_problem/problem3_tobe.PNG";
-import problem4as from "../assets/images/image/pj2_problem/problem4_asis.PNG";
-import problem4to from "../assets/images/image/pj2_problem/problem4_tobe.PNG";
-import problem5as from "../assets/images/image/pj2_problem/problem5_asis.PNG";
-import problem5to from "../assets/images/image/pj2_problem/problem5_tobe.png";
+import pj3file from "../assets/images/image/pj3_file.png";
+import long from "../assets/images/image/pj3_coding.png";
+import problem1as from "../assets/images/image/pj3_problem/problem1_asis.png";
+import problem1to from "../assets/images/image/pj3_problem/problem1_tobe.png";
+import problem2to from "../assets/images/image/pj3_problem/problem2_tobe.png";
+import problem3as from "../assets/images/image/pj3_problem/problem3_asis.png";
+import problem3to from "../assets/images/image/pj3_problem/problem3_tobe.png";
+
 
 import '../style/pj3.scss';
 
@@ -69,14 +64,12 @@ function Pj3() {
         <div className="pjBox">
           <img src={pj3} alert="디자인코코" className="pjimg" />
         </div>
-          {/* <div className="pjLogin">
-          <img src={pj3Login} alert="디자인코코_로그인"/>
-          </div> */}
+
       </article>
       <article className="contain">
         <div className="dir">
           <h3>디렉토리</h3>
-          <img src={pj1file} alt="pj1 디렉토리" />
+          <img src={pj3file} alt="pj1 디렉토리" />
         </div>
         <div className="code">
           <h3>코딩컨벤션</h3>
@@ -84,36 +77,23 @@ function Pj3() {
             <h4>이름규칙</h4>
             <ul>
               <li>
-                component명: 파스칼 표기법으로 표기
-                <span>
-                  mainbanner <BsArrowRight /> MainBanner
-                </span>
-              </li>
-              <li>
                 변수/함수명: 카멜표기법으로 표기
                 <span>
-                  openList <BsArrowRight /> openList
-                </span>
-              </li>
-              <li>
-                객체 변수명: 소문자 복수형 표기
-                <span>
-                  data <BsArrowRight /> datas
+                  topbtn <BsArrowRight /> topBtn
                 </span>
               </li>
 
               <li>
-                style명: 카멜표기법 사용
+                style명: 소문자 사용
                 <span>
-                  mainbanner <BsArrowRight /> mainBanner
+                  login <BsArrowRight /> login
                 </span>
               </li>
               <li>
-                이미지/아이콘명: 이미지가 첨부될 components 첫번째
-                단어_이미지특징.확장자명으로 소문자 기재
+                이미지/아이콘명: 이미지가 첨부될 section+숫자 조합으로 명칭
                 <span>
-                  WhatIDo components 내 자격증 아이콘 <BsArrowRight />
-                  what_license.svg
+                  product내 들어갈 3번째 이미지 <BsArrowRight />
+                  product3.jpg
                 </span>
               </li>
             </ul>
@@ -129,23 +109,14 @@ function Pj3() {
                 </div>
               </li>
               <li>
-                함수표현식(화살표함수)로 사용
+               일반함수 구성으로 함수표현
                 <p>
-                  ㄴ 표현식이 장황하지 않고
-                  <span className="press">추론을 쉽게 함</span>
+                  ㄴ html에서 함수 호출을 하기 때문에
+                  <span className="press">호이스팅</span>을 가능하도록 하기 위해 사용
                 </p>
-                <p>ㄴ 매개변수가 하나뿐이여도 소괄호 기재</p>
-                <p>
-                  ㄴ 표현식이 한 줄을 넘길 경우
-                  <span className="press">(표현식)</span> 으로 기재
-                </p>
+               
               </li>
-              <li>
-                객체/배열 선언, 리터럴 방식으로 표기
-                <div className="codeBox">
-                  <img src={array} alt="Array" />
-                </div>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -154,7 +125,7 @@ function Pj3() {
         <div className="tool">
           <h3>make use</h3>
           <p>
-            <span>Tool</span> GitHub, Visual Studio Code, Figma
+            <span>Tool</span> GitHub, Visual Studio Code
           </p>
           <p>
             <span>웹표준 언어</span> HTML5
@@ -163,89 +134,89 @@ function Pj3() {
             <span>프로그래밍 언어</span> javascript
           </p>
           <p>
-            <span>라이브러리</span> react
-          </p>
-          <p>
-            <span>스타일</span> SCSS
+            <span>스타일</span> CSS
           </p>
         </div>
 
         <div className="page">
           <h3>페이지 구성</h3>
           <div className="pagetable">
-            <h4>&lsaquo; Header.js &rsaquo;</h4>
+            <h4>&lsaquo; index &rsaquo;</h4>
+            <div className="mainTxt" >
+              <h5>banner</h5>
+              <ul>
+                <li>
+                  <span>Swiper</span>를 이용한 배너 구성
+                </li>
+          
+              </ul>
+            </div>
             <div
-              className="mainTxt"
-              style={{ borderBottom: "1px solid #000", marginBottom: `100px` }}
-            >
-              <h5>Header</h5>
+              className="mainTxt" >
+              <h5>wedo</h5>
               <ul>
                 <li>
-                  Router의 Link와 Navigate를 활용한 <span>페이지 이동</span>
+                  <span>forEach</span>를 활용한 각각의 동일한 동작성 부여
                 </li>
                 <li>
-                  useState을 통한 <span>toggle 형식</span> 기능 구현
+                  특정 조건에서의 css 적용
                 </li>
               </ul>
             </div>
-            <h4>&lsaquo; Main.js &rsaquo;</h4>
+            <div
+              className="mainTxt">
+              <h5>product</h5>
+              <ul>
+                <li>
+                  <span>figure와 figcaption</span> 태그를 통한 레아아웃 구성
+                </li>
+                <li>
+                  filter를 활용한 스타일 적용
+                </li>
+              </ul>
+            </div>
+            <div
+              className="mainTxt">
+              <h5>cscenter</h5>
+              <ul>
+                <li>
+                  문의 내용을 기입하기 위한 <span>form 태그</span> 활용
+                </li>
+                <li>
+                  <span>웹 아이콘</span> 사용으로 직관적인 기능 표현
+                </li>
+              </ul>
+            </div>
+            <div
+              className="mainTxt" style={{ borderBottom: "1px solid #000", marginBottom: `100px` }}>
+              <h5>etc</h5>
+              <ul>
+                <li>
+                  상대적인 레이아웃 포지셔닝
+                </li>
+                <li>
+                  <span>iframe</span> 태그를 활용한 youtube 컨텐츠 적용
+                </li>
+              </ul>
+            </div>
 
+            <h4>&lsaquo; login &rsaquo;</h4>
+
+           
             <div className="mainTxt">
-              <h5>MainHello</h5>
-              <ul>
-                <li>useEffect와 setInterval을 활용한 배열값 반복</li>
-                <li>
-                  SCSS의 이미지 <span>Rotate 애니메이션</span>
-                </li>
-              </ul>
-            </div>
-            <div className="mainTxt">
-              <h5>Work</h5>
+              <h5>Login</h5>
               <ul>
                 <li>
-                  useRef의 DOM 접근과 offsetTop에 따른<span>스크롤 이벤트</span>
-                  로 map() 메서드의 <span>배열 값 반환</span>
+                 <span>KAKAO API</span> 를 활용한 간편 로그인 구현
                 </li>
-                <li>Router Link를 통해 SubPage 이동</li>
-                {/*  <li>
-                  <span>offsetTop</span>을 통한 스크롤 이벤트
-                </li>
-               <li>
-                  스크롤 이벤트에 따른 map() 메서드로 각{" "}
-                  <span>project의 설명 반환</span>
-                </li> */}
+                <li>SNS로그인 여부에 따라 alert 팝업 출력</li>
                 <li>
-                  SCSS <span>sticky</span>를 활용한 레이아웃 포지셔닝
+                  <span>form 태그</span> 를 활용한 로그인 화면 구현
                 </li>
               </ul>
             </div>
 
-            <div className="mainTxt">
-              <h5>WhatIDo</h5>
-              <ul>
-                <li>offsetTop을 통한 스크롤 이벤트</li>
-                <li>
-                  SCSS <span>Text Rolling 애니메이션</span>
-                </li>
-              </ul>
-            </div>
-            <div className="mainTxt">
-              <h5>Skill</h5>
-              <ul>
-                <li>map() 메서드의 배열 내 skill 설명항목 반복 반환</li>
-              </ul>
-              <div class="check">
-                <div class="plus"></div>
-              </div>
-            </div>
-            <div className="mainTxt">
-              <h5>Footer</h5>
-              <ul>
-                <li>
-                  SCSS <span>Text Rolling 애니메이션</span> 및 레이아웃 포지셔닝
-                </li>
-              </ul>
-            </div>
+           
           </div>
         </div>
       </article>
@@ -253,11 +224,11 @@ function Pj3() {
         <h3>problem & resolve</h3>
         <ul>
           <li>
-            <span className="loca">MainHello.js</span>
-            <h4>"나오는거는 잘하는데 전환할 때 끊기는 느낌이 드네?"</h4>
-            <p>기존 출력되었던 배열값이 끊겨서 사라지고 새로운 배열값 출력</p>
+            <span className="loca">Index</span>
+            <h4>왜 DropMenu가 나오는거지?</h4>
+            <p>Menu가 아닌 하단부분을 hover시 DropMenu 출력함</p>
             <div className="resolve">
-              <p>setInterval 내 반복하는 time값을 2초로 늘려 해결</p>
+              <p>CSS 내 <span>pointer-events</span> 값을 적용하여 DropMenu 내 li는 none, Menu 내 li는 all로 설정하여 해결</p>
             </div>
             <div className="problemCode">
               <div className="as">
@@ -271,24 +242,17 @@ function Pj3() {
             </div>
           </li>
           <li>
-            <span className="loca">Work.js</span>
-            <h4>"map()으로 처리한 data들의 offsetTop은 어떻게 구하지?"</h4>
+            <span className="loca">Login</span>
+            <h4>"로그인 되면 홈에는 로그아웃이 떠야하는데?"</h4>
             <p>
-              useRef을 변수(ref=ref변수)로 적용 시에는 배열 중 처음만 적용되서
-              모든 배열의 offsetTop을 알수 없음
+              로그인이 완료되면 홈에서 로그인 유무에 따라 '로그인 또는 로그아웃'으로 출력해야함
             </p>
             <div className="resolve">
               <p>
-                useRef를 배열로 값을 받으며,
-                <span>for문을 통해 각각의 값의 offsetTop 도출</span>(count는
-                useState(0))
+                현재 로그인 유무를 확인하기 위해서는 <span>server(node.js)가 필요</span>로 해 login 페이지 내 <span>회원 탈퇴와 로그아웃 동작성</span>을 확인 가능하도록 버튼 생성하여 우회
               </p>
             </div>
             <div className="problemCode">
-              <div className="as">
-                <h5>As-is</h5>
-                <img src={problem2as} alt="problem2_asis" />
-              </div>
               <div className="to">
                 <h5>To-be</h5>
                 <img src={problem2to} alt="problem2_tobe" />
@@ -296,70 +260,28 @@ function Pj3() {
             </div>
           </li>
           <li>
-            <span className="loca">Pj1~Pj5.js</span>
-            <h4>"처음부분으로 안가지?"</h4>
-            <p>Project 상세페이지 이동 시 페이지 중간부터 출력</p>
-            <div className="resolve">
-              <p>
-                Main.js에서 Link까지 도달한 스크롤 값은 그대로 유지되기 때문에
-                useEffect을 활용하여
-                <span>useLoation 변경 시마다 scrollTo 상단 이동</span>하도록
-                하여 해결
-              </p>
-            </div>
-            <div className="problemCode">
-              <div className="to">
-                <h5>To-be</h5>
-                <img src={problem3to} alt="problem3_tobe" />
-              </div>
-            </div>
-          </li>
-          <li>
-            <span className="loca">WhatIdo.js/Last.js</span>
-            <h4>"왜 잘 가다가 버벅이지?"</h4>
-            <p>clearInterval 적용해도 text 이동 시 버벅임</p>
-            <div className="resolve">
-              <p>
-                작성한 cloneNode 항목이 clearInterval보다 더 빨리, 더 많이
-                출력되기 때문에 텍스트 버벅이는 현상이 지속되어 scss
-                <span>Text Rolling 애니메이션으로 우회함</span>
-              </p>
-            </div>
-            <div className="problemCode">
-              <div className="as">
-                <h5>As-is</h5>
-                <img src={problem4as} alt="problem4_asis" />
-              </div>
-              <div className="to">
-                <h5>To-be</h5>
-                <img src={problem4to} alt="problem4_tobe" />
-              </div>
-            </div>
-          </li>
-          <li>
-            <span className="loca">Header.js</span>
-            <h4>"contact가 안들어가지네?"</h4>
+            <span className="loca">Login</span>
+            <h4>"KOE006 에러가 나네?"</h4>
             <p>
-              Project 상세페이지에서 contact 선택 시 이전페이지인 Main.js로 이동
+              카카오 개발자 페이지 내 JS SDK 데모 코드 적용 후 확인 시 KOE006 에러 표시됨
             </p>
             <div className="resolve">
               <p>
-                Main.js에 Project 상세페이지를 Link 하면서 노출된 이슈로
-                useState 활용하여 Link contact를 <span>toggle 형식</span>으로
-                구현하여 해결
+                <span>redirectUri</span>는 응답 시 이동하는 링크로 설정된 링크로 설정한 링크로 기재해야함. Url 변경 시에는 에러가 출력하지 않지만 <span>로그인의 동작성 확인만 필요</span>로 하기 때문에 성공했을 경우 data를 console에 출력하도록 함
               </p>
             </div>
             <div className="problemCode">
               <div className="as">
                 <h5>As-is</h5>
-                <img src={problem5as} alt="problem5_asis" />
+                <img src={problem3as} alt="problem2_asis" />
               </div>
               <div className="to">
                 <h5>To-be</h5>
-                <img src={problem5to} alt="problem5_tobe" />
+                <img src={problem3to} alt="problem2_tobe" />
               </div>
             </div>
           </li>
+        
         </ul>
       </article>
       <div className="linkBtn">
