@@ -2,7 +2,7 @@ import {HiOutlineMail} from 'react-icons/hi';
 import {BsGithub} from 'react-icons/bs';
 import "../style/contact.scss";
 
-import img1 from '../assets/images/image/img1.jpg';
+import face from '../assets/images/image/face_img.jpg';
 import img2 from '../assets/images/image/img2.jpg';
 import { useState } from 'react';
 
@@ -15,7 +15,7 @@ function Contact() {
     <div className='contactBox' onMouseMove={(e)=>handleMouseMove(e)} >
       <div className='contactImg'>
         <div className='img1' style={{transform:`translate(${xy.x/15}px,${xy.y/15}px)`}}>
-        <img src={img1} alt='img1' className='img1'/>
+        <img src={face} alt='img1' className='img1'/>
         </div>
         <div className='img2' style={{transform:`translate(-${xy.x/20}px,-${xy.y/20}px)`}}>
         <img src={img2} alt='img2'className='img2'/>
