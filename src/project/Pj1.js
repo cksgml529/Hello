@@ -145,7 +145,7 @@ function Pj1() {
         <div className="tool">
           <h3>make use</h3>
           <p>
-            <span>Tool</span> GitHub, Heroku, Visual Studio Code
+            <span>Tool</span> Heroku, Visual Studio Code
           </p>
           <p>
             <span>웹표준 언어</span> HTML5
