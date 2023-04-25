@@ -51,7 +51,7 @@ function Pj3() {
                 </span>
               </div>
             </Link>
-            <Link to="/web_coco/">
+            <Link to="https://jejuport-node.herokuapp.com/">
               <div className="linkBox">
                 <span>
                   <BsArrowRight style={{ paddingRight: 10 }} />
