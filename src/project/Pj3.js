@@ -51,14 +51,14 @@ function Pj3() {
                 </span>
               </div>
             </Link>
-            <Link to="https://cksgml529.github.io/web_coco/">
+            <a href="https://cksgml529.github.io/web_coco/">
               <div className="linkBox">
                 <span>
                   <BsArrowRight style={{ paddingRight: 10 }} />
                   go to webpage
                 </span>
               </div>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="pjBox">
