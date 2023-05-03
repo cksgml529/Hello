@@ -42,7 +42,7 @@ function Work() {
       imgalt: "코코디자인",
       logo: pj3logo,
       logoalt: "로고",
-      link: "./pj3",
+      link: "pj3",
       title: "javascript web",
       tag: "#PC #개인프로젝트 #Swiper #로그인",
     },
